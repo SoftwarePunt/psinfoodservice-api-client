@@ -1,0 +1,5 @@
+# Composer
+vendor/
+
+# PHPUnit output
+*.phpunit.result.cache
