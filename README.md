@@ -3,10 +3,24 @@
 
 This library helps you interact with the PS-API, version 6.
 
-|🌍 **PS in foodservice**|https://psinfoodservice.nl/|
-|---|---|
-|📕 **API documentation**|https://webapi.psinfoodservice.com/V6/prod/Home/EN|
-|📦 **Composer package**|[softwarepunt/psinfoodservice-api-client](softwarepunt/psinfoodservice-api-client)|
+<table>
+  <tbody>
+    <tr>
+      <td>🌍 <strong>PS in foodservice</strong></td>
+      <td><a href="https://psinfoodservice.nl/">https://psinfoodservice.nl/</a></td>
+    </tr>
+    <tr>
+      <td>📕 <strong>API documentation</strong></td>
+      <td><a href="https://webapi.psinfoodservice.com/V6/prod/Home/EN">https://webapi.psinfoodservice.com/V6/prod/Home/EN</a></td>
+    </tr>
+    <tr>
+      <td>📦 <strong>Composer package</strong></td>
+      <td><a href="https://packagist.org/packages/softwarepunt/psinfoodservice-api-client">softwarepunt/psinfoodservice-api-client</a></td>
+    </tr>
+  </tbody>
+</table>
+
+⚠ **Work in progress - not all API features are implemented yet. PRs are welcome. :)**
 
 ## Installation
 ### Requirements
@@ -46,8 +60,6 @@ All implemented API routes will match the URL structure, for example:
 // Example of structure - the code route for "api/Product/Search" call:
 $client->product()->search(); 
 ```
-
-⚠ **Not all API features are implemented yet. PRs are welcome. :)**
 
 ### Searching for products
 You can search for a product by providing parameters. You must select one "product set" at minimum; for example: all public products:
