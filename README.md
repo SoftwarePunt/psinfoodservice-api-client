@@ -36,4 +36,5 @@ require_once "vendor/autoload.php";
 $client = new Client();
 $client->setUsername("webapi@yourorg.ps");
 $client->setPassword("************");
+$client->setTimeout(30);
 ```

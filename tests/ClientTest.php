@@ -24,22 +24,4 @@ class ClientTest extends TestCase
             message: 'buildUrl() should format query parameters properly'
         );
     }
-
-    public function testBuildRequest_GET()
-    {
-        $client = new Client();
-        $request = $client->buildRequest('/master/all', ['take' => 2]);
-        $this->assertSame(
-            expected: "GET",
-            actual: $request->getMethod()
-        );
-        $this->assertSame(
-            expected: "https://webapi.psinfoodservice.com/v6/prod/api/master/all?take=2",
-            actual: (string)$request->getUri()
-        );
-        $this->assertStringContainsString(
-            needle: "psinfoodservice-api-client",
-            haystack: $request->getHeaderLine('User-Agent')
-        );
-    }
 }

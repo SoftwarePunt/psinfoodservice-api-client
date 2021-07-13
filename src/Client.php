@@ -3,9 +3,10 @@
 namespace SoftwarePunt\PSAPI;
 
 use GuzzleHttp\Client as GuzzleClient;
-use GuzzleHttp\Psr7\Request;
-use Psr\Http\Message\RequestInterface;
+use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Message\ResponseInterface;
+use SoftwarePunt\PSAPI\Api\ProductApi;
+use SoftwarePunt\PSAPI\Models\PsApiException;
 
 /**
  * Base API client for the PS in foodservice Web API (PS-API)
@@ -100,37 +101,47 @@ class Client
     }
 
     /**
-     * Builds an HTTP request for the PS-API.
-     *
-     * @param string $path The URL path (e.g. "/master/all")
-     * @param array|null $queryParams Optional Query parameters
-     * @param array|null $postData Optional POST parameters
-     * @return RequestInterface The generated request
-     */
-    public function buildRequest(string $path, ?array $queryParams = null, ?array $postData = null): RequestInterface
-    {
-        $requestMethod = empty($postData) ? "GET" : "POST";
-        $requestUrl = $this->buildUrl($path, $queryParams);
-
-        return new Request($requestMethod, $requestUrl, [
-            'User-Agent' => "softwarepunt/psinfoodservice-api-client"
-        ]);
-    }
-
-    /**
      * Sends an HTTP request using the API credentials and options.
      *
-     * @throws \GuzzleHttp\Exception\GuzzleException On HTTP request / network error
+     * @throws PsApiException On HTTP request / network error
      */
-    protected function sendRequest(RequestInterface $request): ResponseInterface
+    public function sendRequest(string $path, ?array $queryParams = null, ?array $postData = null): ResponseInterface
     {
         if (empty($this->username) || empty($this->password))
             throw new \RuntimeException('Username or password is missing, cannot send requests');
 
-        return $this->httpClient->send($request, [
-            'auth' => [$this->username, $this->password],
-            'timeout' => $this->timeout,
-            'http_errors' => false
-        ]);
+        $requestMethod = empty($postData) ? "GET" : "POST";
+        $requestUrl = $this->buildUrl($path, $queryParams);
+
+        /**
+         * @var $response ResponseInterface|null
+         */
+        $response = null;
+
+        try {
+            $response = $this->httpClient->request($requestMethod, $requestUrl, [
+                'auth' => [$this->username, $this->password],
+                'form_params' => $postData,
+                'timeout' => $this->timeout,
+                'http_errors' => false
+            ]);
+        } catch (GuzzleException $ex) {
+            throw new PsApiException("Guzzle request error: {$ex->getMessage()}", previous: $ex);
+        }
+
+        if ($response->getStatusCode() !== 200) {
+            $bodyText = $response->getBody()?->getContents() ?? "(Empty body)";
+            throw new PsApiException("API response error ({$response->getReasonPhrase()}): {$bodyText}");
+        }
+
+        return $response;
+    }
+
+    // -----------------------------------------------------------------------------------------------------------------
+    // API paths
+
+    public function product(): ProductApi
+    {
+        return new ProductApi($this);
     }
 }
