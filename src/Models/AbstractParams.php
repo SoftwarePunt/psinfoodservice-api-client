@@ -6,6 +6,8 @@ use SoftwarePunt\PSAPI\Models\Enums\ContentType;
 
 abstract class AbstractParams
 {
+    const DefaultPageSize = 10;
+
     // -----------------------------------------------------------------------------------------------------------------
     // Common params
 
@@ -16,7 +18,7 @@ abstract class AbstractParams
     /**
      * Detemines how many items should be taken (default=10).
      */
-    public int $Take = 10;
+    public int $Take = self::DefaultPageSize;
     /**
      * Could be Unknown or Xml
      */

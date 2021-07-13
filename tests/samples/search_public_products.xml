@@ -1,0 +1,2220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://webapi.psinfoodservice.com/v6/prod/Doc/PS_API_XSD_V6.xsd">
+  <header>
+    <provider>PS In Foodservice</provider>
+    <disclaimer>PS In Foodservice</disclaimer>
+    <version>6.3.6</version>
+    <totalrowcount>88995</totalrowcount>
+    <origin>PSXML</origin>
+    <actiontype>GET</actiontype>
+    <transactionRef>6480XXXX-4b5c-474f-XXXX-2df0091c8fb2</transactionRef>
+    <updateproductinfo>0</updateproductinfo>
+    <updatespecificationinfo>0</updatespecificationinfo>
+    <updatecommercialinfo>0</updatecommercialinfo>
+    <updatelogisticinfo>0</updatelogisticinfo>
+    <executiontime>0002488</executiontime>
+  </header>
+  <body>
+    <!-- Adapted from sample: https://webapi.psinfoodservice.com/V6/prod/Documentation/ProductXml -->
+    <products>
+      <product>
+        <summary>
+          <id>988887</id>
+          <name>
+            <value>PS Citroensnoepje 20g</value>
+          </name>
+          <ean>1213456789125</ean>
+          <netweight>2.000000000000000e+001</netweight>
+          <netweightunitofmeasure>
+            <value>gram</value>
+          </netweightunitofmeasure>
+          <netcontent>2.000000000000000e+001</netcontent>
+          <netcontentunitofmeasure>
+            <value>gram</value>
+          </netcontentunitofmeasure>
+          <brandid>2135</brandid>
+          <brandname>PS demo</brandname>
+          <lastupdatedon>2021-02-25T10:44:42.313</lastupdatedon>
+          <packshot>https://permalink.psinfoodservice.com/prod/image/233697/A604D8B1-5A0A-4E49-A3B6-E1EDFCB14D3D?w=250&amp;h=250</packshot>
+          <publiclyvisible>1</publiclyvisible>
+          <targetmarketid>1</targetmarketid>
+          <targetmarketisocode>NL</targetmarketisocode>
+        </summary>
+        <productinfolist>
+          <productinfo>
+            <id>221712</id>
+            <name>
+              <value>Citroensnoepje </value>
+              <translation>
+                <value>Citroensnoepje </value>
+                <culture>nl-NL</culture>
+              </translation>
+              <translation>
+                <value>Zitronen süß</value>
+                <culture>de-DE</culture>
+              </translation>
+              <translation>
+                <value>Lemon sweet</value>
+                <culture>en-US</culture>
+              </translation>
+              <translation>
+                <value>Citron doux</value>
+                <culture>fr-FR</culture>
+              </translation>
+            </name>
+            <targetmarketid>1</targetmarketid>
+            <targetmarketname>
+              <value>Nederland</value>
+            </targetmarketname>
+            <targetmarketisocode>NL</targetmarketisocode>
+            <productgroupid>343</productgroupid>
+            <productgroupname>
+              <value>Snoep</value>
+            </productgroupname>
+            <countryofproductionid>155</countryofproductionid>
+            <countryofproductionisocode>528</countryofproductionisocode>
+            <countryofproductionname>
+              <value>Nederland</value>
+            </countryofproductionname>
+            <countryoforiginid>155</countryoforiginid>
+            <countryoforiginisocode>528</countryoforiginisocode>
+            <countryoforiginname>
+              <value>Nederland</value>
+            </countryoforiginname>
+            <lastupdatedon>2019-01-16T14:58:29.630</lastupdatedon>
+            <qualitymarkinfolist>
+              <qualitymarkinfo>
+                <id>78</id>
+                <name>
+                  <value>FAIRTRADE MARK</value>
+                </name>
+                <logo>https://permalink.psinfoodservice.com/prod/image/63126/4325860B-C74B-469A-AE50-7E161AF633D7?w=250&amp;h=250</logo>
+              </qualitymarkinfo>
+            </qualitymarkinfolist>
+            <characteristicinfolist>
+              <characteristicinfo>
+                <id>3</id>
+                <name>
+                  <value>Bevat eiwitten</value>
+                </name>
+                <isapplicable>0</isapplicable>
+                <isclaimedonlabel>0</isclaimedonlabel>
+              </characteristicinfo>
+              <characteristicinfo>
+                <id>4</id>
+                <name>
+                  <value>Bevat glutamaat</value>
+                </name>
+                <isapplicable>0</isapplicable>
+                <isclaimedonlabel>0</isclaimedonlabel>
+              </characteristicinfo>
+              <characteristicinfo>
+                <id>5</id>
+                <name>
+                  <value>Bevat gluten</value>
+                </name>
+                <isapplicable>0</isapplicable>
+                <isclaimedonlabel>0</isclaimedonlabel>
+              </characteristicinfo>
+              <characteristicinfo>
+                <id>7</id>
+                <name>
+                  <value>Bevat kip en gevogelte</value>
+                </name>
+                <isapplicable>0</isapplicable>
+                <isclaimedonlabel>0</isclaimedonlabel>
+              </characteristicinfo>
+              <characteristicinfo>
+                <id>9</id>
+                <name>
+                  <value>Bevat lactose </value>
+                </name>
+                <isapplicable>0</isapplicable>
+                <isclaimedonlabel>0</isclaimedonlabel>
+              </characteristicinfo>
+              <characteristicinfo>
+                <id>13</id>
+                <name>
+                  <value>Bevat noten</value>
+                </name>
+                <isapplicable>0</isapplicable>
+                <isclaimedonlabel>0</isclaimedonlabel>
+              </characteristicinfo>
+              <characteristicinfo>
+                <id>14</id>
+                <name>
+                  <value>Bevat rundvlees</value>
+                </name>
+                <isapplicable>0</isapplicable>
+                <isclaimedonlabel>0</isclaimedonlabel>
+              </characteristicinfo>
+              <characteristicinfo>
+                <id>16</id>
+                <name>
+                  <value>Bevat suiker</value>
+                </name>
+                <isapplicable>1</isapplicable>
+                <isclaimedonlabel>0</isclaimedonlabel>
+              </characteristicinfo>
+              <characteristicinfo>
+                <id>19</id>
+                <name>
+                  <value>Bevat transvet</value>
+                </name>
+                <isapplicable>0</isapplicable>
+                <isclaimedonlabel>0</isclaimedonlabel>
+              </characteristicinfo>
+              <characteristicinfo>
+                <id>20</id>
+                <name>
+                  <value>Bevat varkensvlees</value>
+                </name>
+                <isapplicable>0</isapplicable>
+                <isclaimedonlabel>0</isclaimedonlabel>
+              </characteristicinfo>
+              <characteristicinfo>
+                <id>28</id>
+                <name>
+                  <value>Veganistisch</value>
+                </name>
+                <isapplicable>1</isapplicable>
+                <isclaimedonlabel>0</isclaimedonlabel>
+              </characteristicinfo>
+              <characteristicinfo>
+                <id>29</id>
+                <name>
+                  <value>Vegetarisch</value>
+                </name>
+                <isapplicable>1</isapplicable>
+                <isclaimedonlabel>0</isclaimedonlabel>
+              </characteristicinfo>
+            </characteristicinfolist>
+          </productinfo>
+        </productinfolist>
+        <specificationinfolist>
+          <specificationinfo>
+            <id>410666</id>
+            <productionlocationid>13200</productionlocationid>
+            <productionlocationname>PS voorbeeld producent</productionlocationname>
+            <productionlocationgln>8712423027510</productionlocationgln>
+            <lastupdatedon>2020-03-13T08:37:51.837</lastupdatedon>
+            <specificationstatusname>
+              <value>Presentatie</value>
+            </specificationstatusname>
+            <ingredientset>
+              <isgmofree>1</isgmofree>
+              <isirradiated>0</isirradiated>
+              <ingredientdeclaration>
+                <value>suiker, water, glucose , citroenzuur, kleurstoffen  (E131, E171)</value>
+                <translation>
+                  <value>suiker, water, glucose , citroenzuur, kleurstoffen  (E131, E171)</value>
+                  <culture>nl-NL</culture>
+                </translation>
+                <translation>
+                  <value>Zucker, Wasser, Glukose ,  Zitronensäure, Farbstoff (E131, E171)</value>
+                  <culture>de-DE</culture>
+                </translation>
+                <translation>
+                  <value>sugar, water, glucose , citric acid, colouring (E131, E171)</value>
+                  <culture>en-US</culture>
+                </translation>
+                <translation>
+                  <value>sucre, eau, glucose , acide citrique, colorant (E131, E171)</value>
+                  <culture>fr-FR</culture>
+                </translation>
+              </ingredientdeclaration>
+              <ingredientdeclarationpreview>
+                <value>suiker, water, glucose , citroenzuur, kleurstoffen  (E131, E171)</value>
+                <translation>
+                  <value>suiker, water, glucose , citroenzuur, kleurstoffen  (E131, E171)</value>
+                  <culture>nl-NL</culture>
+                </translation>
+                <translation>
+                  <value>Zucker, Wasser, Glukose ,  Zitronensäure, Farbstoff (E131, E171)</value>
+                  <culture>de-DE</culture>
+                </translation>
+                <translation>
+                  <value>sugar, water, glucose , citric acid, colouring (E131, E171)</value>
+                  <culture>en-US</culture>
+                </translation>
+                <translation>
+                  <value>sucre, eau, glucose , acide citrique, colorant (E131, E171)</value>
+                  <culture>fr-FR</culture>
+                </translation>
+              </ingredientdeclarationpreview>
+              <ingredients>
+                <ingredientinfo>
+                  <sequence>1</sequence>
+                  <id>100021210</id>
+                  <name>
+                    <value>suiker</value>
+                    <translation>
+                      <value>suiker</value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value>Zucker</value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value>sugar</value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value>sucre</value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </name>
+                  <countryoforigins>
+                    <countryoforigin>
+                      <id>155</id>
+                      <name>
+                        <value>Nederland</value>
+                      </name>
+                    </countryoforigin>
+                  </countryoforigins>
+                </ingredientinfo>
+                <ingredientinfo>
+                  <sequence>2</sequence>
+                  <id>100021212</id>
+                  <name>
+                    <value>water</value>
+                    <translation>
+                      <value>water</value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value>Wasser</value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value>water</value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value>eau</value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </name>
+                </ingredientinfo>
+                <ingredientinfo>
+                  <sequence>3</sequence>
+                  <id>100021213</id>
+                  <name>
+                    <value>glucose </value>
+                    <translation>
+                      <value>glucose </value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value>Glukose </value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value>glucose </value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value>glucose </value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </name>
+                  <countryoforigins>
+                    <countryoforigin>
+                      <id>155</id>
+                      <name>
+                        <value>Nederland</value>
+                      </name>
+                    </countryoforigin>
+                  </countryoforigins>
+                </ingredientinfo>
+                <ingredientinfo>
+                  <sequence>4</sequence>
+                  <id>100021214</id>
+                  <name>
+                    <value>citroenzuur</value>
+                    <translation>
+                      <value>citroenzuur</value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value> Zitronensäure</value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value>citric acid</value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value>acide citrique</value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </name>
+                  <countryoforigins>
+                    <countryoforigin>
+                      <id>155</id>
+                      <name>
+                        <value>Nederland</value>
+                      </name>
+                    </countryoforigin>
+                  </countryoforigins>
+                </ingredientinfo>
+                <ingredientinfo>
+                  <sequence>5</sequence>
+                  <id>100021215</id>
+                  <name>
+                    <value>kleurstoffen </value>
+                    <translation>
+                      <value>kleurstoffen </value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value>Farbstoff</value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value>colouring</value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value>colorant</value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </name>
+                  <subingredients>
+                    <ingredientinfo>
+                      <sequence>4</sequence>
+                      <id>100021219</id>
+                      <name>
+                        <value>E131</value>
+                        <translation>
+                          <value>E131</value>
+                          <culture>nl-NL</culture>
+                        </translation>
+                        <translation>
+                          <value>E131</value>
+                          <culture>de-DE</culture>
+                        </translation>
+                        <translation>
+                          <value>E131</value>
+                          <culture>en-US</culture>
+                        </translation>
+                        <translation>
+                          <value>E131</value>
+                          <culture>fr-FR</culture>
+                        </translation>
+                      </name>
+                    </ingredientinfo>
+                    <ingredientinfo>
+                      <sequence>6</sequence>
+                      <id>100021221</id>
+                      <name>
+                        <value>E171</value>
+                        <translation>
+                          <value>E171</value>
+                          <culture>nl-NL</culture>
+                        </translation>
+                        <translation>
+                          <value>E171</value>
+                          <culture>de-DE</culture>
+                        </translation>
+                        <translation>
+                          <value>E171</value>
+                          <culture>en-US</culture>
+                        </translation>
+                        <translation>
+                          <value>E171</value>
+                          <culture>fr-FR</culture>
+                        </translation>
+                      </name>
+                    </ingredientinfo>
+                  </subingredients>
+                </ingredientinfo>
+              </ingredients>
+            </ingredientset>
+            <allergenset>
+              <allergens>
+                <allergeninfo>
+                  <id>1</id>
+                  <name>
+                    <value>melk</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>3</id>
+                  <name>
+                    <value>ei</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>4</id>
+                  <name>
+                    <value>soja</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>5</id>
+                  <name>
+                    <value>glutenbevattende granen</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>6</id>
+                  <name>
+                    <value>tarwe</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>7</id>
+                  <name>
+                    <value>rogge</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>11</id>
+                  <name>
+                    <value>vis</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>12</id>
+                  <name>
+                    <value>schaaldieren</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>16</id>
+                  <name>
+                    <value>noten</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>17</id>
+                  <name>
+                    <value>pinda's</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>19</id>
+                  <name>
+                    <value>sulfiet (E220 - E228)</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>21</id>
+                  <name>
+                    <value>selderij</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>22</id>
+                  <name>
+                    <value>sesam</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>23</id>
+                  <name>
+                    <value>lupine</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>24</id>
+                  <name>
+                    <value>mosterd</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>26</id>
+                  <name>
+                    <value>weekdieren</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>27</id>
+                  <name>
+                    <value>gerst</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>28</id>
+                  <name>
+                    <value>haver</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>29</id>
+                  <name>
+                    <value>spelt</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>30</id>
+                  <name>
+                    <value>khorasantarwe</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>31</id>
+                  <name>
+                    <value>amandelen</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>32</id>
+                  <name>
+                    <value>hazelnoten</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>33</id>
+                  <name>
+                    <value>walnoten</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>34</id>
+                  <name>
+                    <value>cashewnoten</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>35</id>
+                  <name>
+                    <value>pecannoten</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>36</id>
+                  <name>
+                    <value>paranoten</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>37</id>
+                  <name>
+                    <value>pistachenoten</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+                <allergeninfo>
+                  <id>38</id>
+                  <name>
+                    <value>macadamianoten</value>
+                  </name>
+                  <levelofcontainmentid>2</levelofcontainmentid>
+                  <levelofcontainmentname>
+                    <value>Bevat niet</value>
+                  </levelofcontainmentname>
+                </allergeninfo>
+              </allergens>
+            </allergenset>
+            <nutrientset>
+              <nutrientcomment>
+                <value>extra voedingswaarde opmerking</value>
+              </nutrientcomment>
+              <dailyvalueintakereferencecomment>
+                <value>Alternatieve tekst voor: Referentie-inname van een gemiddelde volwassene (8400kJ / 2000kcal).</value>
+              </dailyvalueintakereferencecomment>
+              <informationproviderid>4</informationproviderid>
+              <informationprovidername>
+                <value>opgave volgens fabrikant</value>
+              </informationprovidername>
+              <nutrientinfolist>
+                <nutrientinfo>
+                  <id>388794</id>
+                  <stateofpreparationid>2</stateofpreparationid>
+                  <stateofpreparationname>
+                    <value>Product</value>
+                  </stateofpreparationname>
+                  <perhunderduomid>3</perhunderduomid>
+                  <perhunderduomname>
+                    <value>gram</value>
+                  </perhunderduomname>
+                  <servingunitvalue>5.000000000000000e+000</servingunitvalue>
+                  <servinguomid>3</servinguomid>
+                  <servinguomname>
+                    <value>gram</value>
+                  </servinguomname>
+                  <nutrients>
+                    <nutrient>
+                      <id>1</id>
+                      <name>
+                        <value>Energie</value>
+                      </name>
+                      <measurementprecisionid>2</measurementprecisionid>
+                      <measurementprecisionname>
+                        <value>exact</value>
+                      </measurementprecisionname>
+                      <value>1.615000000000000e+003</value>
+                      <valueperserving>8.100000000000000e+001</valueperserving>
+                      <guidelinedailyamount>1.000000000000000e+000</guidelinedailyamount>
+                      <unitofmeasureid>10</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>kJ</value>
+                      </unitofmeasurename>
+                    </nutrient>
+                    <nutrient>
+                      <id>2</id>
+                      <name>
+                        <value>Energie</value>
+                      </name>
+                      <measurementprecisionid>2</measurementprecisionid>
+                      <measurementprecisionname>
+                        <value>exact</value>
+                      </measurementprecisionname>
+                      <value>3.800000000000000e+002</value>
+                      <valueperserving>1.900000000000000e+001</valueperserving>
+                      <guidelinedailyamount>1.000000000000000e+000</guidelinedailyamount>
+                      <unitofmeasureid>11</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>kcal</value>
+                      </unitofmeasurename>
+                    </nutrient>
+                    <nutrient>
+                      <id>3</id>
+                      <name>
+                        <value>Eiwit totaal</value>
+                      </name>
+                      <measurementprecisionid>2</measurementprecisionid>
+                      <measurementprecisionname>
+                        <value>exact</value>
+                      </measurementprecisionname>
+                      <value>0.000000000000000e+000</value>
+                      <valueperserving>0.000000000000000e+000</valueperserving>
+                      <guidelinedailyamount>0.000000000000000e+000</guidelinedailyamount>
+                      <unitofmeasureid>3</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>gram</value>
+                      </unitofmeasurename>
+                    </nutrient>
+                    <nutrient>
+                      <id>4</id>
+                      <name>
+                        <value>eiwit plantaardig</value>
+                      </name>
+                      <measurementprecisionid>2</measurementprecisionid>
+                      <measurementprecisionname>
+                        <value>exact</value>
+                      </measurementprecisionname>
+                      <value>0.000000000000000e+000</value>
+                      <valueperserving>0.000000000000000e+000</valueperserving>
+                      <unitofmeasureid>3</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>gram</value>
+                      </unitofmeasurename>
+                    </nutrient>
+                    <nutrient>
+                      <id>5</id>
+                      <name>
+                        <value>eiwit dierlijk</value>
+                      </name>
+                      <measurementprecisionid>2</measurementprecisionid>
+                      <measurementprecisionname>
+                        <value>exact</value>
+                      </measurementprecisionname>
+                      <value>0.000000000000000e+000</value>
+                      <valueperserving>0.000000000000000e+000</valueperserving>
+                      <unitofmeasureid>3</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>gram</value>
+                      </unitofmeasurename>
+                    </nutrient>
+                    <nutrient>
+                      <id>6</id>
+                      <name>
+                        <value>Koolhydraten totaal</value>
+                      </name>
+                      <measurementprecisionid>2</measurementprecisionid>
+                      <measurementprecisionname>
+                        <value>exact</value>
+                      </measurementprecisionname>
+                      <value>9.500000000000000e+001</value>
+                      <valueperserving>4.800000000000000e+000</valueperserving>
+                      <guidelinedailyamount>2.000000000000000e+000</guidelinedailyamount>
+                      <unitofmeasureid>3</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>gram</value>
+                      </unitofmeasurename>
+                    </nutrient>
+                    <nutrient>
+                      <id>7</id>
+                      <name>
+                        <value>waarvan suikers</value>
+                      </name>
+                      <measurementprecisionid>2</measurementprecisionid>
+                      <measurementprecisionname>
+                        <value>exact</value>
+                      </measurementprecisionname>
+                      <value>7.100000000000000e+001</value>
+                      <valueperserving>3.600000000000000e+000</valueperserving>
+                      <guidelinedailyamount>4.000000000000000e+000</guidelinedailyamount>
+                      <unitofmeasureid>3</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>gram</value>
+                      </unitofmeasurename>
+                    </nutrient>
+                    <nutrient>
+                      <id>14</id>
+                      <name>
+                        <value>Vet totaal</value>
+                      </name>
+                      <measurementprecisionid>2</measurementprecisionid>
+                      <measurementprecisionname>
+                        <value>exact</value>
+                      </measurementprecisionname>
+                      <value>0.000000000000000e+000</value>
+                      <valueperserving>0.000000000000000e+000</valueperserving>
+                      <guidelinedailyamount>0.000000000000000e+000</guidelinedailyamount>
+                      <unitofmeasureid>3</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>gram</value>
+                      </unitofmeasurename>
+                    </nutrient>
+                    <nutrient>
+                      <id>15</id>
+                      <name>
+                        <value>waarvan verzadigd vet</value>
+                      </name>
+                      <measurementprecisionid>2</measurementprecisionid>
+                      <measurementprecisionname>
+                        <value>exact</value>
+                      </measurementprecisionname>
+                      <value>0.000000000000000e+000</value>
+                      <valueperserving>0.000000000000000e+000</valueperserving>
+                      <guidelinedailyamount>0.000000000000000e+000</guidelinedailyamount>
+                      <unitofmeasureid>3</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>gram</value>
+                      </unitofmeasurename>
+                    </nutrient>
+                    <nutrient>
+                      <id>18</id>
+                      <name>
+                        <value>transvetzuren</value>
+                      </name>
+                      <measurementprecisionid>2</measurementprecisionid>
+                      <measurementprecisionname>
+                        <value>exact</value>
+                      </measurementprecisionname>
+                      <value>0.000000000000000e+000</value>
+                      <valueperserving>0.000000000000000e+000</valueperserving>
+                      <unitofmeasureid>3</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>gram</value>
+                      </unitofmeasurename>
+                    </nutrient>
+                    <nutrient>
+                      <id>24</id>
+                      <name>
+                        <value>voedingsvezel</value>
+                      </name>
+                      <measurementprecisionid>2</measurementprecisionid>
+                      <measurementprecisionname>
+                        <value>exact</value>
+                      </measurementprecisionname>
+                      <value>0.000000000000000e+000</value>
+                      <valueperserving>0.000000000000000e+000</valueperserving>
+                      <unitofmeasureid>3</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>gram</value>
+                      </unitofmeasurename>
+                    </nutrient>
+                    <nutrient>
+                      <id>64</id>
+                      <name>
+                        <value>Zout</value>
+                      </name>
+                      <measurementprecisionid>2</measurementprecisionid>
+                      <measurementprecisionname>
+                        <value>exact</value>
+                      </measurementprecisionname>
+                      <value>0.000000000000000e+000</value>
+                      <valueperserving>0.000000000000000e+000</valueperserving>
+                      <guidelinedailyamount>0.000000000000000e+000</guidelinedailyamount>
+                      <unitofmeasureid>3</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>gram</value>
+                      </unitofmeasurename>
+                    </nutrient>
+                    <nutrient>
+                      <id>66</id>
+                      <name>
+                        <value>toegevoegd suiker</value>
+                      </name>
+                      <measurementprecisionid>2</measurementprecisionid>
+                      <measurementprecisionname>
+                        <value>exact</value>
+                      </measurementprecisionname>
+                      <value>7.100000000000000e+001</value>
+                      <valueperserving>3.600000000000000e+000</valueperserving>
+                      <unitofmeasureid>3</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>gram</value>
+                      </unitofmeasurename>
+                    </nutrient>
+                    <nutrient>
+                      <id>117</id>
+                      <name>
+                        <value>toegevoegd zout</value>
+                      </name>
+                      <measurementprecisionid>2</measurementprecisionid>
+                      <measurementprecisionname>
+                        <value>exact</value>
+                      </measurementprecisionname>
+                      <value>0.000000000000000e+000</value>
+                      <valueperserving>0.000000000000000e+000</valueperserving>
+                      <unitofmeasureid>3</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>gram</value>
+                      </unitofmeasurename>
+                    </nutrient>
+                  </nutrients>
+                </nutrientinfo>
+              </nutrientinfolist>
+            </nutrientset>
+            <preparationinformationset>
+              <preparationinformationinfolist>
+                <preparationinformationinfo>
+                  <id>656499</id>
+                  <preparationtypeid>37</preparationtypeid>
+                  <preparationtypename>
+                    <value> Geen bereiding noodzakelijk</value>
+                  </preparationtypename>
+                </preparationinformationinfo>
+              </preparationinformationinfolist>
+            </preparationinformationset>
+            <organolepticcharacteristicset>
+              <organolepticcharacteristicinfolist>
+                <organolepticcharacteristicinfo>
+                  <id>777298</id>
+                  <name>
+                    <value>Smaak </value>
+                    <translation>
+                      <value>Smaak </value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value>Geschmack</value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value>Taste</value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value>Goût</value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </name>
+                  <description>
+                    <value>Citroen </value>
+                    <translation>
+                      <value>Citroen </value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value>Zitrone</value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value>Lemon</value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value>Citron</value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </description>
+                </organolepticcharacteristicinfo>
+                <organolepticcharacteristicinfo>
+                  <id>777299</id>
+                  <name>
+                    <value>Kleur</value>
+                    <translation>
+                      <value>Kleur</value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value>Farbe</value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value>Colour</value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value>Couleur</value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </name>
+                  <description>
+                    <value>Blauw en wit </value>
+                    <translation>
+                      <value>Blauw en wit </value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value>Blau und Weiß</value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value>Blue and white</value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value>Bleu et blanc</value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </description>
+                </organolepticcharacteristicinfo>
+                <organolepticcharacteristicinfo>
+                  <id>777300</id>
+                  <name>
+                    <value>Consistentie </value>
+                    <translation>
+                      <value>Consistentie </value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value>Konsistenz</value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value>Consistency</value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value>Cohérence</value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </name>
+                  <description>
+                    <value>Hard </value>
+                    <translation>
+                      <value>Hard </value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value>Schwer</value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value>Hard</value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value>Dure</value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </description>
+                </organolepticcharacteristicinfo>
+                <organolepticcharacteristicinfo>
+                  <id>777301</id>
+                  <name>
+                    <value>Geur</value>
+                    <translation>
+                      <value>Geur</value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value>Riechen</value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value>Odor</value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value>Odeur</value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </name>
+                  <description>
+                    <value>Typisch voor een citroensnoepje</value>
+                    <translation>
+                      <value>Typisch voor een citroensnoepje</value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value>Typisch für eine Zitronensüße</value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value>Typical for a lemon sweet</value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value>Typique pour un bonbon au citron</value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </description>
+                </organolepticcharacteristicinfo>
+              </organolepticcharacteristicinfolist>
+            </organolepticcharacteristicset>
+            <physiochemicalcharacteristicset />
+          </specificationinfo>
+        </specificationinfolist>
+        <commercialinfolist>
+          <commercialinfo>
+            <id>217348</id>
+            <name>
+              <value>Citroensnoepje </value>
+              <translation>
+                <value>Citroensnoepje </value>
+                <culture>nl-NL</culture>
+              </translation>
+              <translation>
+                <value>Zitronen süß</value>
+                <culture>de-DE</culture>
+              </translation>
+              <translation>
+                <value>Lemon sweet</value>
+                <culture>en-US</culture>
+              </translation>
+              <translation>
+                <value>Citron doux</value>
+                <culture>fr-FR</culture>
+              </translation>
+            </name>
+            <legalname>
+              <value>Snoep met citroensmaak </value>
+              <translation>
+                <value>Snoep met citroensmaak </value>
+                <culture>nl-NL</culture>
+              </translation>
+              <translation>
+                <value>Süßigkeiten mit Zitronengeschmack</value>
+                <culture>de-DE</culture>
+              </translation>
+              <translation>
+                <value>Candy with lemon flavor</value>
+                <culture>en-US</culture>
+              </translation>
+              <translation>
+                <value>Bonbons à la saveur de citron</value>
+                <culture>fr-FR</culture>
+              </translation>
+            </legalname>
+            <functionalname>
+              <value>Snoep</value>
+              <translation>
+                <value>Snoep</value>
+                <culture>nl-NL</culture>
+              </translation>
+              <translation>
+                <value>Süßigkeit</value>
+                <culture>de-DE</culture>
+              </translation>
+              <translation>
+                <value>Candy</value>
+                <culture>en-US</culture>
+              </translation>
+              <translation>
+                <value>Candy</value>
+                <culture>fr-FR</culture>
+              </translation>
+            </functionalname>
+            <variantdescription>
+              <value>Citroen</value>
+              <translation>
+                <value>Citroen</value>
+                <culture>nl-NL</culture>
+              </translation>
+              <translation>
+                <value>Zitrone</value>
+                <culture>de-DE</culture>
+              </translation>
+              <translation>
+                <value>Lemon</value>
+                <culture>en-US</culture>
+              </translation>
+              <translation>
+                <value>Citron</value>
+                <culture>fr-FR</culture>
+              </translation>
+            </variantdescription>
+            <brand>
+              <id>2135</id>
+              <name>PS demo</name>
+              <brandownerid>13200</brandownerid>
+              <brandownername>PS voorbeeld producent</brandownername>
+              <brandownergln>8712423027510</brandownergln>
+              <image>https://permalink.psinfoodservice.com/prod/image/233698/27981C5A-BC1E-4092-9670-DCF2C287EC1C?w=250&amp;h=250</image>
+            </brand>
+            <producerid>13200</producerid>
+            <producername>PS voorbeeld producent</producername>
+            <producergln>8712423027510</producergln>
+            <globalproductclassificationid>79</globalproductclassificationid>
+            <globalproductclassificationcode>10000047</globalproductclassificationcode>
+            <globalproductclassificationname>
+              <value>Sugar Candy/Sugar Candy Substitutes Confectionery</value>
+            </globalproductclassificationname>
+            <validfrom>2017-12-22</validfrom>
+            <description>
+              <value>Een heerlijk snoepje met ons logo erin. Deze productspecificatie geeft een beeld van alle velden die te vullen zijn in PS.</value>
+              <translation>
+                <value>Een heerlijk snoepje met ons logo erin. Deze productspecificatie geeft een beeld van alle velden die te vullen zijn in PS.</value>
+                <culture>nl-NL</culture>
+              </translation>
+              <translation>
+                <value>Eine köstliche Süßigkeit mit unserem Logo. Diese Produktspezifikation bietet einen Überblick über alle Felder, die in PS ausgefüllt werden können.</value>
+                <culture>de-DE</culture>
+              </translation>
+              <translation>
+                <value>A delicious candy with our logo in it. This product specification provides an overview of all fields that can be filled in PS.</value>
+                <culture>en-US</culture>
+              </translation>
+              <translation>
+                <value>Un délicieux bonbon avec notre logo dedans. Cette spécification de produit donne un aperçu de tous les champs qui peuvent être remplis dans PS.</value>
+                <culture>fr-FR</culture>
+              </translation>
+            </description>
+            <lastupdatedon>2020-03-05T08:48:26.493</lastupdatedon>
+            <commercialstorytitle>
+              <value>Productinformatie borg, deel en gebruik</value>
+              <translation>
+                <value>Productinformatie borg, deel en gebruik</value>
+                <culture>nl-NL</culture>
+              </translation>
+              <translation>
+                <value>Hinterlegen, teilen und verwenden Sie Produktinformationen</value>
+                <culture>de-DE</culture>
+              </translation>
+              <translation>
+                <value>Product information deposit, share and use</value>
+                <culture>en-US</culture>
+              </translation>
+              <translation>
+                <value>Dépôt, partage et utilisation des informations sur les produits</value>
+                <culture>fr-FR</culture>
+              </translation>
+            </commercialstorytitle>
+            <commercialstorytext>
+              <value>Producenten borgen bij PS in foodservice de informatie over hun producten.
+                Naast informatie over ingredi&amp;#235;nten, voedingswaarde en allergenen, ook herkomst, keurmerken, kenmerken, foto’s, filmpjes, gebruiksinstructies, recepten, bewaarcondities en logistieke info.
+                De informatie van de producten wordt beschikbaar gesteld aan groothandels, detailhandel, webshops, platforms en afnemers (horeca, catering, ziekenhuizen, zorg, tankstations etc). Maar ook consumenten, App’s en het Voedingscentrum.
+                De informatie is ook gratis in te zien via het FoodBook, op de website van PSinfoodservice.nl
+                PS borgt ook steeds meer producten in de Belgische markt. Of voor andere doelmarkten, in 4 talen.
+                En steeds meer non-food producenten borgen de productinformatie in PS, inclusief veiligheidsbladen en certificaten.
+
+                Vanaf nu is ook de non-food productsheet van PS in foodservice beschikbaar. Verspreid ook als non-food producent gemakkelijk alle data over jouw producten via PS in foodservice. Deel foto’s, productomschrijvingen, gebruiksinstructies, filmpjes, veiligheidsbladen, kenmerken, logistieke details en nog veel meer met jouw groothandels en afnemers via &amp;#233;&amp;#233;n centrale bron.</value>
+              <translation>
+                <value>Producenten borgen bij PS in foodservice de informatie over hun producten.
+                  Naast informatie over ingredi&amp;#235;nten, voedingswaarde en allergenen, ook herkomst, keurmerken, kenmerken, foto’s, filmpjes, gebruiksinstructies, recepten, bewaarcondities en logistieke info.
+                  De informatie van de producten wordt beschikbaar gesteld aan groothandels, detailhandel, webshops, platforms en afnemers (horeca, catering, ziekenhuizen, zorg, tankstations etc). Maar ook consumenten, App’s en het Voedingscentrum.
+                  De informatie is ook gratis in te zien via het FoodBook, op de website van PSinfoodservice.nl
+                  PS borgt ook steeds meer producten in de Belgische markt. Of voor andere doelmarkten, in 4 talen.
+                  En steeds meer non-food producenten borgen de productinformatie in PS, inclusief veiligheidsbladen en certificaten.
+
+                  Vanaf nu is ook de non-food productsheet van PS in foodservice beschikbaar. Verspreid ook als non-food producent gemakkelijk alle data over jouw producten via PS in foodservice. Deel foto’s, productomschrijvingen, gebruiksinstructies, filmpjes, veiligheidsbladen, kenmerken, logistieke details en nog veel meer met jouw groothandels en afnemers via &amp;#233;&amp;#233;n centrale bron.</value>
+                <culture>nl-NL</culture>
+              </translation>
+              <translation>
+                <value>Hersteller garantieren die Informationen &amp;#252;ber ihre Produkte bei PS in Foodservice.
+                  Neben Informationen zu Inhaltsstoffen, N&amp;#228;hrwert und Allergenen auch Herkunft, Etiketten, Eigenschaften, Fotos, Videos, Gebrauchsanweisungen, Rezepte, Lagerbedingungen und logistische Informationen.
+                  Die Informationen zu den Produkten werden Gro&amp;#223;h&amp;#228;ndlern, Einzelh&amp;#228;ndlern, Webshops, Plattformen und Kunden (Gastgewerbe, Catering, Krankenh&amp;#228;user, Gesundheitswesen, Tankstellen usw.) zur Verf&amp;#252;gung gestellt. Aber auch Verbraucher, Apps und das Nutrition Center.
+                  Die Informationen k&amp;#246;nnen auch kostenlos &amp;#252;ber das FoodBook auf der Website PSinfoodservice.nl eingesehen werden
+                  PS garantiert auch immer mehr Produkte auf dem belgischen Markt. Oder f&amp;#252;r andere Zielm&amp;#228;rkte in 4 Sprachen.
+                  Und immer mehr Non-Food-Hersteller sch&amp;#252;tzen Produktinformationen in PS, einschlie&amp;#223;lich Sicherheitsdatenbl&amp;#228;ttern und Zertifikaten.
+
+                  Ab sofort ist auch das Non-Food-Produktblatt von PS in Food Service erh&amp;#228;ltlich. Selbst als Non-Food-Hersteller k&amp;#246;nnen Sie problemlos alle Daten zu Ihren Produkten &amp;#252;ber PS im Food-Service verteilen. Teilen Sie Fotos, Produktbeschreibungen, Benutzeranweisungen, Videos, Sicherheitsdatenbl&amp;#228;tter, Funktionen, logistische Details und vieles mehr mit Ihren Gro&amp;#223;h&amp;#228;ndlern und K&amp;#228;ufern &amp;#252;ber eine zentrale Quelle.</value>
+                <culture>de-DE</culture>
+              </translation>
+              <translation>
+                <value>Producers enter all the information about their products in PS in foodservice.
+                  In addition to information about ingredients, nutritional value and allergens, also origin, labels, characteristics, photos, videos, instructions for use, recipes, storage conditions and logistical information.
+                  The information about the products is made available to wholesalers, retailers, web shops, platforms and customers (hospitality, catering, hospitals, healthcare, gas stations, etc.). But also consumers, apps and the Voedingscentrum.
+                  The information can also be viewed for free via the FoodBook, on the PSinfoodservice.nl website.
+                  The amount of Belgian products is also growing, more and more products are being added. You can add the data in 4 languages.
+                  And more and more non-food producers are safeguarding product information in PS, including safety data sheets and certificates.
+
+                  From now on, the non-food product sheet from PS in foodservice is also available. Even as a non-food producer you can easily distribute all your product information via PS in food service. Share photos, product descriptions, user instructions, videos, safety data sheets, features, logistical details and much more with your wholesalers and buyers via one central source.</value>
+                <culture>en-US</culture>
+              </translation>
+              <translation>
+                <value>Les producteurs garantissent les informations sur leurs produits chez PS en restauration.
+                  En plus des informations sur les ingr&amp;#233;dients, la valeur nutritive et les allerg&amp;#232;nes, &amp;#233;galement l&amp;#39;origine, les &amp;#233;tiquettes, les caract&amp;#233;ristiques, les photos, les vid&amp;#233;os, les instructions d&amp;#39;utilisation, les recettes, les conditions de stockage et les informations logistiques.
+                  Les informations sur les produits sont mises &amp;#224; la disposition des grossistes, d&amp;#233;taillants, boutiques en ligne, plateformes et clients (h&amp;#244;tellerie, restauration, h&amp;#244;pitaux, soins de sant&amp;#233;, stations-service, etc.). Mais aussi les consommateurs, les applications et le Nutrition Center.
+                  Les informations peuvent &amp;#233;galement &amp;#234;tre consult&amp;#233;es gratuitement via le FoodBook, sur le site Web PSinfoodservice.nl
+                  PS garantit &amp;#233;galement de plus en plus de produits sur le march&amp;#233; belge. Ou pour d&amp;#39;autres march&amp;#233;s cibles, en 4 langues.
+                  Et de plus en plus de producteurs non alimentaires sauvegardent les informations sur les produits dans PS, y compris les fiches de donn&amp;#233;es de s&amp;#233;curit&amp;#233; et les certificats.
+
+                  D&amp;#233;sormais, la fiche produit non alimentaire de PS en restauration est &amp;#233;galement disponible. M&amp;#234;me en tant que producteur non alimentaire, vous pouvez facilement diffuser toutes les donn&amp;#233;es sur vos produits via PS in food service. Partagez des photos, des descriptions de produits, des instructions d&amp;#39;utilisation, des vid&amp;#233;os, des fiches de donn&amp;#233;es de s&amp;#233;curit&amp;#233;, des fonctionnalit&amp;#233;s, des d&amp;#233;tails logistiques et bien plus encore avec vos grossistes et acheteurs via une source centrale.</value>
+                <culture>fr-FR</culture>
+              </translation>
+            </commercialstorytext>
+          </commercialinfo>
+        </commercialinfolist>
+        <logisticinfolist>
+          <logisticinfo>
+            <id>988887</id>
+            <name>
+              <value>PS Citroensnoepje 20g</value>
+              <translation>
+                <value>PS Citroensnoepje 20g</value>
+                <culture>nl-NL</culture>
+              </translation>
+              <translation>
+                <value>PS Zitrone Süßigkeiten 20g</value>
+                <culture>de-DE</culture>
+              </translation>
+              <translation>
+                <value>PS Lemon candy 20g</value>
+                <culture>en-US</culture>
+              </translation>
+              <translation>
+                <value>PS Bonbon au citron 20g</value>
+                <culture>fr-FR</culture>
+              </translation>
+            </name>
+            <gdsntradeitemdescription>
+              <value>PS Citroensnoepje 20g</value>
+              <translation>
+                <value>PS Citroensnoepje 20g</value>
+                <culture>nl-NL</culture>
+              </translation>
+              <translation>
+                <value>PS Zitrone Süßigkeiten 20g</value>
+                <culture>de-DE</culture>
+              </translation>
+              <translation>
+                <value>PS Lemon candy 20g</value>
+                <culture>en-US</culture>
+              </translation>
+              <translation>
+                <value>PS Bonbon au citron 20g</value>
+                <culture>fr-FR</culture>
+              </translation>
+            </gdsntradeitemdescription>
+            <descriptionshort>
+              <value>korte omschrijving PS snoepje</value>
+              <translation>
+                <value>korte omschrijving PS snoepje</value>
+                <culture>nl-NL</culture>
+              </translation>
+              <translation>
+                <value>kurze Beschreibung PS-Süßigkeit</value>
+                <culture>de-DE</culture>
+              </translation>
+              <translation>
+                <value>short description PS candy</value>
+                <culture>en-US</culture>
+              </translation>
+              <translation>
+                <value>brève description bonbons PS</value>
+                <culture>fr-FR</culture>
+              </translation>
+            </descriptionshort>
+            <gtin>1213456789125</gtin>
+            <number>1234</number>
+            <intrastatcode>17049071</intrastatcode>
+            <taxrateid>4</taxrateid>
+            <taxratename>
+              <value>Low</value>
+            </taxratename>
+            <isbaseunit>1</isbaseunit>
+            <isavailableinretail>1</isavailableinretail>
+            <isavailableinfoodservice>1</isavailableinfoodservice>
+            <isestimatedweightorvalue>0</isestimatedweightorvalue>
+            <isconsumerunit>1</isconsumerunit>
+            <isdespatchunit>1</isdespatchunit>
+            <isinvoiceunit>1</isinvoiceunit>
+            <isorderableunit>1</isorderableunit>
+            <isvariableunit>0</isvariableunit>
+            <package>
+              <id>85285</id>
+              <name>
+                <value>zak (10mm x 70mm x 90mm)</value>
+                <translation>
+                  <value>Tüte (10mm x 70mm x 90mm)</value>
+                  <culture>de-DE</culture>
+                </translation>
+                <translation>
+                  <value>bag (10mm x 70mm x 90mm)</value>
+                  <culture>en-US</culture>
+                </translation>
+                <translation>
+                  <value>zak (10mm x 70mm x 90mm)</value>
+                  <culture>nl-NL</culture>
+                </translation>
+                <translation>
+                  <value>sac (10mm x 70mm x 90mm)</value>
+                  <culture>fr-FR</culture>
+                </translation>
+              </name>
+              <packagingtypeid>50</packagingtypeid>
+              <packagingtypename>
+                <value>zak</value>
+              </packagingtypename>
+              <depthvalue>1.000000000000000e+001</depthvalue>
+              <depthuomid>18</depthuomid>
+              <depthuomname>
+                <value>millimeter</value>
+              </depthuomname>
+              <heightvalue>9.000000000000000e+001</heightvalue>
+              <heightuomid>18</heightuomid>
+              <heightuomname>
+                <value>millimeter</value>
+              </heightuomname>
+              <widthvalue>7.000000000000000e+001</widthvalue>
+              <widthuomid>18</widthuomid>
+              <widthuomname>
+                <value>millimeter</value>
+              </widthuomname>
+              <weightvalue>4.000000000000000e+000</weightvalue>
+              <weightuomid>3</weightuomid>
+              <weightuomname>
+                <value>gram</value>
+              </weightuomname>
+              <depositapplies>0</depositapplies>
+              <isprimarypackage>1</isprimarypackage>
+              <packagingmaterialinfolist>
+                <packagingmaterialinfo>
+                  <id>44</id>
+                  <name>
+                    <value>Polyethyleen</value>
+                  </name>
+                  <value>2.000000000000000e+000</value>
+                  <unitofmeasureid>3</unitofmeasureid>
+                  <unitofmeasurename>
+                    <value>gram</value>
+                  </unitofmeasurename>
+                  <comment>
+                    <value>Metaalgezicht PET MET / PE 12/110 micron.</value>
+                    <translation>
+                      <value></value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value></value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value></value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value></value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </comment>
+                  <isrecyclable>0</isrecyclable>
+                  <percentagerecycledmaterial>1.000000000000000e+001</percentagerecycledmaterial>
+                </packagingmaterialinfo>
+                <packagingmaterialinfo>
+                  <id>24</id>
+                  <name>
+                    <value>Polyethyleentereftalaat (PET)</value>
+                  </name>
+                  <value>2.000000000000000e+000</value>
+                  <unitofmeasureid>3</unitofmeasureid>
+                  <unitofmeasurename>
+                    <value>gram</value>
+                  </unitofmeasurename>
+                  <comment>
+                    <value>Transparant gezicht PET / PE 12/110 micron.</value>
+                    <translation>
+                      <value></value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value></value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value></value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value></value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </comment>
+                  <isrecyclable>0</isrecyclable>
+                  <percentagerecycledmaterial>1.000000000000000e+001</percentagerecycledmaterial>
+                </packagingmaterialinfo>
+              </packagingmaterialinfolist>
+            </package>
+            <netweightvalue>2.000000000000000e+001</netweightvalue>
+            <netweightuomid>3</netweightuomid>
+            <netweightuomname>
+              <value>gram</value>
+            </netweightuomname>
+            <netcontentvalue>2.000000000000000e+001</netcontentvalue>
+            <netcontentuomid>3</netcontentuomid>
+            <netcontentuomname>
+              <value>gram</value>
+            </netcontentuomname>
+            <grossweightvalue>2.500000000000000e+001</grossweightvalue>
+            <grossweightuomid>3</grossweightuomid>
+            <grossweightuomname>
+              <value>gram</value>
+            </grossweightuomname>
+            <packagedproducttypeid>1</packagedproducttypeid>
+            <packagedproducttypename>
+              <value>Consumenteneenheid</value>
+            </packagedproducttypename>
+            <numberofservingsperpackage>1.200000000000000e+001</numberofservingsperpackage>
+            <lastupdatedon>2021-02-25T10:42:49.497</lastupdatedon>
+            <labelcontact>
+              <id>85484</id>
+              <name>PS in foodservice</name>
+              <communicationaddress>Nieuwe Kazernelaan 2-D42, 6711JC Ede</communicationaddress>
+              <labelcontactcommunicationchannelinfolist>
+                <labelcontactcommunicationchannelinfo>
+                  <labelcontacttypeid>1</labelcontacttypeid>
+                  <labelcontacttypename>
+                    <value>Administrative</value>
+                  </labelcontacttypename>
+                  <website>https://psinfoodservice.nl/</website>
+                  <emailaddress>info@PSinfoodservice.com</emailaddress>
+                  <phonenumber>085 044 18 96</phonenumber>
+                  <sequence>0</sequence>
+                </labelcontactcommunicationchannelinfo>
+              </labelcontactcommunicationchannelinfolist>
+            </labelcontact>
+            <storageconditionset>
+              <comment>
+                <value>Bijvoorbeeld: Na opening gekoeld bewaren</value>
+                <translation>
+                  <value>Bijvoorbeeld: Na opening gekoeld bewaren</value>
+                  <culture>nl-NL</culture>
+                </translation>
+                <translation>
+                  <value>Zum Beispiel: Nach dem Öffnen gekühlt aufbewahren</value>
+                  <culture>de-DE</culture>
+                </translation>
+                <translation>
+                  <value>For example: Keep refrigerated after opening</value>
+                  <culture>en-US</culture>
+                </translation>
+                <translation>
+                  <value>Par exemple: conserver au réfrigérateur après ouverture</value>
+                  <culture>fr-FR</culture>
+                </translation>
+              </comment>
+              <usageinstructionlabel>
+                <value>Verpakking openen door te scheuren bij de inkepingen aan de onderkant van de verpakking.</value>
+                <translation>
+                  <value>Verpakking openen door te scheuren bij de inkepingen aan de onderkant van de verpakking.</value>
+                  <culture>nl-NL</culture>
+                </translation>
+                <translation>
+                  <value>Öffnen Sie die Verpackung, indem Sie an den Kerben an der Unterseite der Verpackung aufreißen.</value>
+                  <culture>de-DE</culture>
+                </translation>
+                <translation>
+                  <value>Open the packaging by tearing at the notches at the bottom of the packaging.</value>
+                  <culture>en-US</culture>
+                </translation>
+                <translation>
+                  <value>Ouvrez l'emballage en déchirant les encoches situées au bas de l'emballage.</value>
+                  <culture>fr-FR</culture>
+                </translation>
+              </usageinstructionlabel>
+              <storageinstructionlabel>
+                <value>Bijvoorbeeld: Koel en droog bewaren.</value>
+                <translation>
+                  <value>Bijvoorbeeld: Koel en droog bewaren.</value>
+                  <culture>nl-NL</culture>
+                </translation>
+                <translation>
+                  <value>Zum Beispiel: Kühl und trocken halten.</value>
+                  <culture>de-DE</culture>
+                </translation>
+                <translation>
+                  <value>For example: Keep cool and dry.</value>
+                  <culture>en-US</culture>
+                </translation>
+                <translation>
+                  <value>Par exemple: Restez au frais et au sec.</value>
+                  <culture>fr-FR</culture>
+                </translation>
+              </storageinstructionlabel>
+              <preservationtechniqueid>23</preservationtechniqueid>
+              <preservationtechniquename>
+                <value> n.v.t.</value>
+              </preservationtechniquename>
+              <shelflifelocationtext>
+                <value>Onderaan het etiket</value>
+                <translation>
+                  <value>Onderaan het etiket</value>
+                  <culture>nl-NL</culture>
+                </translation>
+                <translation>
+                  <value>Am unteren Rand des Etiketts</value>
+                  <culture>de-DE</culture>
+                </translation>
+                <translation>
+                  <value>At the bottom of the label</value>
+                  <culture>en-US</culture>
+                </translation>
+                <translation>
+                  <value>Au bas de l'étiquette</value>
+                  <culture>fr-FR</culture>
+                </translation>
+              </shelflifelocationtext>
+              <shelflifeid>1</shelflifeid>
+              <storageconditionstageinfolist>
+                <storageconditionstageinfo>
+                  <id>1</id>
+                  <name>
+                    <value>af productie</value>
+                  </name>
+                  <storageconditioninfolist>
+                    <storageconditioninfo>
+                      <id>6</id>
+                      <name>
+                        <value>donker</value>
+                      </name>
+                      <mintemperature>1.500000000000000e+001</mintemperature>
+                      <maxtemperature>2.000000000000000e+001</maxtemperature>
+                      <periodvalue>1.000000000000000e+000</periodvalue>
+                      <periodid>7</periodid>
+                      <periodname>
+                        <value>jaar</value>
+                      </periodname>
+                    </storageconditioninfo>
+                  </storageconditioninfolist>
+                </storageconditionstageinfo>
+                <storageconditionstageinfo>
+                  <id>2</id>
+                  <name>
+                    <value>ontvangst grossier</value>
+                  </name>
+                  <storageconditioninfolist>
+                    <storageconditioninfo>
+                      <id>6</id>
+                      <name>
+                        <value>donker</value>
+                      </name>
+                      <mintemperature>1.500000000000000e+001</mintemperature>
+                      <maxtemperature>2.000000000000000e+001</maxtemperature>
+                      <periodvalue>1.000000000000000e+000</periodvalue>
+                      <periodid>7</periodid>
+                      <periodname>
+                        <value>jaar</value>
+                      </periodname>
+                    </storageconditioninfo>
+                  </storageconditioninfolist>
+                </storageconditionstageinfo>
+              </storageconditionstageinfolist>
+            </storageconditionset>
+            <microbiologicalsetinfolist>
+              <microbiologicalsetinfo>
+                <id>16779</id>
+                <name>
+                  <value>Het PS snoepje</value>
+                  <translation>
+                    <value>Het PS snoepje</value>
+                    <culture>nl-NL</culture>
+                  </translation>
+                  <translation>
+                    <value>Die PS-Süßigkeit</value>
+                    <culture>de-DE</culture>
+                  </translation>
+                  <translation>
+                    <value>The PS candy</value>
+                    <culture>en-US</culture>
+                  </translation>
+                  <translation>
+                    <value>Les bonbons PS</value>
+                    <culture>fr-FR</culture>
+                  </translation>
+                </name>
+                <microbiologicalstageid>3</microbiologicalstageid>
+                <microbiologicalstagename>
+                  <value>grenswaarde</value>
+                </microbiologicalstagename>
+                <microbiologicalorganisminfolist>
+                  <microbiologicalorganisminfo>
+                    <id>15</id>
+                    <name>
+                      <value>Salmonella</value>
+                    </name>
+                    <measurementprecisionid>4</measurementprecisionid>
+                    <measurementprecisionname>
+                      <value>afwezig in</value>
+                    </measurementprecisionname>
+                    <value>2.500000000000000e+001</value>
+                    <unitofmeasureid>3</unitofmeasureid>
+                    <unitofmeasurename>
+                      <value>gram</value>
+                    </unitofmeasurename>
+                    <sequence>2.000000000000000e+000</sequence>
+                  </microbiologicalorganisminfo>
+                  <microbiologicalorganisminfo>
+                    <id>7</id>
+                    <name>
+                      <value>Enterobacteriaceae</value>
+                    </name>
+                    <measurementprecisionid>3</measurementprecisionid>
+                    <measurementprecisionname>
+                      <value>kleiner dan</value>
+                    </measurementprecisionname>
+                    <value>1.000000000000000e+001</value>
+                    <unitofmeasureid>9</unitofmeasureid>
+                    <unitofmeasurename>
+                      <value>kve/g</value>
+                    </unitofmeasurename>
+                    <sequence>5.000000000000000e+000</sequence>
+                  </microbiologicalorganisminfo>
+                  <microbiologicalorganisminfo>
+                    <id>17</id>
+                    <name>
+                      <value>Staphylococcus aureus</value>
+                    </name>
+                    <measurementprecisionid>3</measurementprecisionid>
+                    <measurementprecisionname>
+                      <value>kleiner dan</value>
+                    </measurementprecisionname>
+                    <value>1.000000000000000e+001</value>
+                    <unitofmeasureid>9</unitofmeasureid>
+                    <unitofmeasurename>
+                      <value>kve/g</value>
+                    </unitofmeasurename>
+                    <sequence>3.000000000000000e+000</sequence>
+                  </microbiologicalorganisminfo>
+                  <microbiologicalorganisminfo>
+                    <id>12</id>
+                    <name>
+                      <value>Listeria monocytogenes</value>
+                    </name>
+                    <measurementprecisionid>4</measurementprecisionid>
+                    <measurementprecisionname>
+                      <value>afwezig in</value>
+                    </measurementprecisionname>
+                    <value>1.000000000000000e+000</value>
+                    <unitofmeasureid>3</unitofmeasureid>
+                    <unitofmeasurename>
+                      <value>gram</value>
+                    </unitofmeasurename>
+                    <sequence>1.000000000000000e+000</sequence>
+                  </microbiologicalorganisminfo>
+                  <microbiologicalorganisminfo>
+                    <id>8</id>
+                    <name>
+                      <value>Escherichia coli</value>
+                    </name>
+                    <measurementprecisionid>4</measurementprecisionid>
+                    <measurementprecisionname>
+                      <value>afwezig in</value>
+                    </measurementprecisionname>
+                    <value>1.000000000000000e+000</value>
+                    <unitofmeasureid>3</unitofmeasureid>
+                    <unitofmeasurename>
+                      <value>gram</value>
+                    </unitofmeasurename>
+                    <sequence>4.000000000000000e+000</sequence>
+                  </microbiologicalorganisminfo>
+                  <microbiologicalorganisminfo>
+                    <id>22</id>
+                    <name>
+                      <value>Aeroob kiemgetal</value>
+                    </name>
+                    <measurementprecisionid>3</measurementprecisionid>
+                    <measurementprecisionname>
+                      <value>kleiner dan</value>
+                    </measurementprecisionname>
+                    <value>1.000000000000000e+004</value>
+                    <unitofmeasureid>9</unitofmeasureid>
+                    <unitofmeasurename>
+                      <value>kve/g</value>
+                    </unitofmeasurename>
+                    <sequence>6.000000000000000e+000</sequence>
+                  </microbiologicalorganisminfo>
+                </microbiologicalorganisminfolist>
+              </microbiologicalsetinfo>
+            </microbiologicalsetinfolist>
+            <assetinfolist>
+              <assetinfo>
+                <id>48710</id>
+                <typeid>1</typeid>
+                <typename>
+                  <value>Afbeelding</value>
+                </typename>
+                <labelid>107</labelid>
+                <labelname>
+                  <value>Sfeerimpressie</value>
+                </labelname>
+                <facingtypeid>101</facingtypeid>
+                <facingtypename>
+                  <value>Voorkant</value>
+                </facingtypename>
+                <angletypeid>101</angletypeid>
+                <angletypename>
+                  <value>Midden</value>
+                </angletypename>
+                <downloadurl>https://permalink.psinfoodservice.com/prod/image/91089/82083616-2870-4996-9B1B-F5E5678533EE?w=250&amp;h=250</downloadurl>
+                <isdefault>0</isdefault>
+                <availableincultures>1;2;3;4</availableincultures>
+                <isheroimage>0</isheroimage>
+              </assetinfo>
+              <assetinfo>
+                <id>48711</id>
+                <typeid>3</typeid>
+                <typename>
+                  <value>Video</value>
+                </typename>
+                <labelid>303</labelid>
+                <labelname>
+                  <value>Achtergrondverhaal</value>
+                </labelname>
+                <formattypeid>301</formattypeid>
+                <formattypename>
+                  <value>Youtube</value>
+                </formattypename>
+                <title>
+                  <value>24Kitchen op bezoek bij Papabubble</value>
+                </title>
+                <externalreferenceid>LHLbQD-77xE</externalreferenceid>
+                <isdefault>0</isdefault>
+                <availableincultures>1;2;3;4</availableincultures>
+                <isheroimage>0</isheroimage>
+              </assetinfo>
+              <assetinfo>
+                <id>48951</id>
+                <typeid>2</typeid>
+                <typename>
+                  <value>Document</value>
+                </typename>
+                <labelid>201</labelid>
+                <labelname>
+                  <value>Recept</value>
+                </labelname>
+                <title>
+                  <value>Productinformatie op je eigen website</value>
+                </title>
+                <downloadurl>https://permalink.psinfoodservice.com/prod/file/91347/179B0EE0-6649-4475-BB38-64F81B5242C7</downloadurl>
+                <isdefault>0</isdefault>
+                <availableincultures>1;2;3;4</availableincultures>
+                <isheroimage>0</isheroimage>
+              </assetinfo>
+              <assetinfo>
+                <id>48953</id>
+                <typeid>2</typeid>
+                <typename>
+                  <value>Document</value>
+                </typename>
+                <labelid>203</labelid>
+                <labelname>
+                  <value>Certificaat</value>
+                </labelname>
+                <title>
+                  <value>De mogelijkheden voor producenten</value>
+                </title>
+                <downloadurl>https://permalink.psinfoodservice.com/prod/file/91349/F67F444F-1727-425A-86AD-D1F57B625A16</downloadurl>
+                <isdefault>0</isdefault>
+                <availableincultures>1;2;3;4</availableincultures>
+                <isheroimage>0</isheroimage>
+              </assetinfo>
+              <assetinfo>
+                <id>48954</id>
+                <typeid>2</typeid>
+                <typename>
+                  <value>Document</value>
+                </typename>
+                <labelid>202</labelid>
+                <labelname>
+                  <value>Veiligheidsblad</value>
+                </labelname>
+                <title>
+                  <value>Handleiding Data Entry</value>
+                </title>
+                <downloadurl>https://permalink.psinfoodservice.com/prod/file/91350/6AF39146-5F04-41B6-B2A5-768E5FE11048</downloadurl>
+                <isdefault>0</isdefault>
+                <availableincultures>1;2;3;4</availableincultures>
+                <isheroimage>0</isheroimage>
+              </assetinfo>
+              <assetinfo>
+                <id>68635</id>
+                <typeid>1</typeid>
+                <typename>
+                  <value>Afbeelding</value>
+                </typename>
+                <labelid>101</labelid>
+                <labelname>
+                  <value>In verpakking</value>
+                </labelname>
+                <facingtypeid>105</facingtypeid>
+                <facingtypename>
+                  <value>Achterkant</value>
+                </facingtypename>
+                <angletypeid>101</angletypeid>
+                <angletypename>
+                  <value>Midden</value>
+                </angletypename>
+                <downloadurl>https://permalink.psinfoodservice.com/prod/image/101327/AAC4792C-714B-4941-8A43-685B3EC3501C?w=250&amp;h=250</downloadurl>
+                <isdefault>0</isdefault>
+                <availableincultures>1;2;3;4</availableincultures>
+                <isheroimage>0</isheroimage>
+              </assetinfo>
+              <assetinfo>
+                <id>167786</id>
+                <typeid>4</typeid>
+                <typename>
+                  <value>Link</value>
+                </typename>
+                <labelid>401</labelid>
+                <labelname>
+                  <value>Website</value>
+                </labelname>
+                <title>
+                  <value>Link naar website</value>
+                </title>
+                <hyperlink>https://psinfoodservice.nl/</hyperlink>
+                <isdefault>0</isdefault>
+                <availableincultures>1;2;3;4</availableincultures>
+                <isheroimage>0</isheroimage>
+              </assetinfo>
+              <assetinfo>
+                <id>228365</id>
+                <typeid>1</typeid>
+                <typename>
+                  <value>Afbeelding</value>
+                </typename>
+                <labelid>107</labelid>
+                <labelname>
+                  <value>Sfeerimpressie</value>
+                </labelname>
+                <facingtypeid>107</facingtypeid>
+                <facingtypename>
+                  <value>Niet van toepassing</value>
+                </facingtypename>
+                <angletypeid>101</angletypeid>
+                <angletypename>
+                  <value>Midden</value>
+                </angletypename>
+                <downloadurl>https://permalink.psinfoodservice.com/prod/image/233694/BA836244-FF0B-42E6-89E0-144817A8D537?w=250&amp;h=250</downloadurl>
+                <isdefault>0</isdefault>
+                <availableincultures>1;2;3;4</availableincultures>
+                <isheroimage>0</isheroimage>
+              </assetinfo>
+              <assetinfo>
+                <id>228367</id>
+                <typeid>1</typeid>
+                <typename>
+                  <value>Afbeelding</value>
+                </typename>
+                <labelid>101</labelid>
+                <labelname>
+                  <value>In verpakking</value>
+                </labelname>
+                <facingtypeid>101</facingtypeid>
+                <facingtypename>
+                  <value>Voorkant</value>
+                </facingtypename>
+                <angletypeid>101</angletypeid>
+                <angletypename>
+                  <value>Midden</value>
+                </angletypename>
+                <downloadurl>https://permalink.psinfoodservice.com/prod/image/233697/A604D8B1-5A0A-4E49-A3B6-E1EDFCB14D3D?w=250&amp;h=250</downloadurl>
+                <isdefault>1</isdefault>
+                <availableincultures>1;2;3;4</availableincultures>
+                <isheroimage>0</isheroimage>
+              </assetinfo>
+            </assetinfolist>
+            <logisticinfolist>
+              <logisticinfo>
+                <id>992915</id>
+                <name>
+                  <value> PS Citroensnoepje 300x20g</value>
+                  <translation>
+                    <value> PS Citroensnoepje 300x20g</value>
+                    <culture>nl-NL</culture>
+                  </translation>
+                  <translation>
+                    <value>PS Zitrone Süßigkeiten 300x20g</value>
+                    <culture>de-DE</culture>
+                  </translation>
+                  <translation>
+                    <value>PS Lemon candy 300x20g</value>
+                    <culture>en-US</culture>
+                  </translation>
+                  <translation>
+                    <value>PS Bonbon au citron 300x20g</value>
+                    <culture>fr-FR</culture>
+                  </translation>
+                </name>
+                <number>12345</number>
+                <isbaseunit>0</isbaseunit>
+                <isconsumerunit>0</isconsumerunit>
+                <isdespatchunit>1</isdespatchunit>
+                <isinvoiceunit>1</isinvoiceunit>
+                <isorderableunit>1</isorderableunit>
+                <isvariableunit>0</isvariableunit>
+                <package>
+                  <id>85583</id>
+                  <name>
+                    <value>doos (500mm x 300mm x 400mm)</value>
+                    <translation>
+                      <value>Karton (500mm x 300mm x 400mm)</value>
+                      <culture>de-DE</culture>
+                    </translation>
+                    <translation>
+                      <value>box (500mm x 300mm x 400mm)</value>
+                      <culture>en-US</culture>
+                    </translation>
+                    <translation>
+                      <value>doos (500mm x 300mm x 400mm)</value>
+                      <culture>nl-NL</culture>
+                    </translation>
+                    <translation>
+                      <value>carton (500mm x 300mm x 400mm)</value>
+                      <culture>fr-FR</culture>
+                    </translation>
+                  </name>
+                  <packagingtypeid>11</packagingtypeid>
+                  <packagingtypename>
+                    <value>doos</value>
+                  </packagingtypename>
+                  <depthvalue>5.000000000000000e+002</depthvalue>
+                  <depthuomid>18</depthuomid>
+                  <depthuomname>
+                    <value>millimeter</value>
+                  </depthuomname>
+                  <heightvalue>4.000000000000000e+002</heightvalue>
+                  <heightuomid>18</heightuomid>
+                  <heightuomname>
+                    <value>millimeter</value>
+                  </heightuomname>
+                  <widthvalue>3.000000000000000e+002</widthvalue>
+                  <widthuomid>18</widthuomid>
+                  <widthuomname>
+                    <value>millimeter</value>
+                  </widthuomname>
+                  <weightvalue>2.500000000000000e+002</weightvalue>
+                  <weightuomid>3</weightuomid>
+                  <weightuomname>
+                    <value>gram</value>
+                  </weightuomname>
+                  <depositapplies>0</depositapplies>
+                  <isprimarypackage>0</isprimarypackage>
+                  <packagingmaterialinfolist>
+                    <packagingmaterialinfo>
+                      <id>37</id>
+                      <name>
+                        <value>Golfkarton dubbelwandig</value>
+                      </name>
+                      <value>2.500000000000000e+002</value>
+                      <unitofmeasureid>3</unitofmeasureid>
+                      <unitofmeasurename>
+                        <value>gram</value>
+                      </unitofmeasurename>
+                      <isrecyclable>0</isrecyclable>
+                      <percentagerecycledmaterial>2.500000000000000e+001</percentagerecycledmaterial>
+                    </packagingmaterialinfo>
+                  </packagingmaterialinfolist>
+                </package>
+                <netweightvalue>6.000000000000000e+003</netweightvalue>
+                <netweightuomid>3</netweightuomid>
+                <netweightuomname>
+                  <value>gram</value>
+                </netweightuomname>
+                <grossweightvalue>8.000000000000000e+003</grossweightvalue>
+                <grossweightuomid>3</grossweightuomid>
+                <grossweightuomname>
+                  <value>gram</value>
+                </grossweightuomname>
+                <packagedproducttypeid>2</packagedproducttypeid>
+                <packagedproducttypename>
+                  <value>Handelseenheid</value>
+                </packagedproducttypename>
+                <numberofsmallerlogisticinfoitems>300</numberofsmallerlogisticinfoitems>
+                <lastupdatedon>2020-04-06T14:00:23.077</lastupdatedon>
+                <logisticinfolist>
+                  <logisticinfo>
+                    <id>1040285</id>
+                    <name>
+                      <value>PS Citroensnoepje 120x300x20g </value>
+                      <translation>
+                        <value>PS Citroensnoepje 120x300x20g </value>
+                        <culture>nl-NL</culture>
+                      </translation>
+                      <translation>
+                        <value>PS Zitrone Süßigkeiten 120x300x20g </value>
+                        <culture>de-DE</culture>
+                      </translation>
+                      <translation>
+                        <value>PS Lemon candy 120x300x20g </value>
+                        <culture>en-US</culture>
+                      </translation>
+                      <translation>
+                        <value>PS Bonbon au citron 120x300x20g</value>
+                        <culture>fr-FR</culture>
+                      </translation>
+                    </name>
+                    <isbaseunit>0</isbaseunit>
+                    <isconsumerunit>0</isconsumerunit>
+                    <package>
+                      <id>228473</id>
+                      <name>
+                        <value>euro pallet (1200mm x 800mm x 1150mm)</value>
+                        <translation>
+                          <value>Euro Palette (1200mm x 800mm x 1150mm)</value>
+                          <culture>de-DE</culture>
+                        </translation>
+                        <translation>
+                          <value>euro pallet (1200mm x 800mm x 1150mm)</value>
+                          <culture>en-US</culture>
+                        </translation>
+                        <translation>
+                          <value>euro pallet (1200mm x 800mm x 1150mm)</value>
+                          <culture>nl-NL</culture>
+                        </translation>
+                        <translation>
+                          <value>euro pallette (1200mm x 800mm x 1150mm)</value>
+                          <culture>fr-FR</culture>
+                        </translation>
+                      </name>
+                      <packagingtypeid>59</packagingtypeid>
+                      <packagingtypename>
+                        <value>euro pallet</value>
+                      </packagingtypename>
+                      <depthvalue>1.200000000000000e+003</depthvalue>
+                      <depthuomid>18</depthuomid>
+                      <depthuomname>
+                        <value>millimeter</value>
+                      </depthuomname>
+                      <heightvalue>1.150000000000000e+003</heightvalue>
+                      <heightuomid>18</heightuomid>
+                      <heightuomname>
+                        <value>millimeter</value>
+                      </heightuomname>
+                      <widthvalue>8.000000000000000e+002</widthvalue>
+                      <widthuomid>18</widthuomid>
+                      <widthuomname>
+                        <value>millimeter</value>
+                      </widthuomname>
+                      <weightuomid>3</weightuomid>
+                      <weightuomname>
+                        <value>gram</value>
+                      </weightuomname>
+                      <depositapplies>0</depositapplies>
+                    </package>
+                    <packagedproducttypeid>4</packagedproducttypeid>
+                    <packagedproducttypename>
+                      <value>Pallet</value>
+                    </packagedproducttypename>
+                    <numberofsmallerlogisticinfoitems>120</numberofsmallerlogisticinfoitems>
+                    <amountlayerperpallet>15</amountlayerperpallet>
+                    <amountperpalletlayer>8</amountperpalletlayer>
+                    <lastupdatedon>2020-04-06T14:00:23.077</lastupdatedon>
+                  </logisticinfo>
+                </logisticinfolist>
+              </logisticinfo>
+            </logisticinfolist>
+          </logisticinfo>
+        </logisticinfolist>
+      </product>
+    </products>
+  </body>
+</envelope>

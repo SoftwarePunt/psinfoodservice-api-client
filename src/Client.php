@@ -7,6 +7,7 @@ use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Message\ResponseInterface;
 use SoftwarePunt\PSAPI\Api\ProductApi;
 use SoftwarePunt\PSAPI\Models\PsApiException;
+use SoftwarePunt\PSAPI\Models\Responses\ApiResponse;
 
 /**
  * Base API client for the PS in foodservice Web API (PS-API)
@@ -105,7 +106,7 @@ class Client
      *
      * @throws PsApiException On HTTP request / network error
      */
-    public function sendRequest(string $path, ?array $queryParams = null, ?array $postData = null): ResponseInterface
+    public function sendRequest(string $path, ?array $queryParams = null, ?array $postData = null): ApiResponse
     {
         if (empty($this->username) || empty($this->password))
             throw new \RuntimeException('Username or password is missing, cannot send requests');
@@ -134,7 +135,7 @@ class Client
             throw new PsApiException("API response error ({$response->getReasonPhrase()}): {$bodyText}");
         }
 
-        return $response;
+        return ApiResponse::fromResponse($response);
     }
 
     // -----------------------------------------------------------------------------------------------------------------
