@@ -30,4 +30,46 @@ class CollectionItem
 
         return $str;
     }
+
+    public function getInt(string $xpath): ?int
+    {
+        $str = $this->getString($xpath);
+
+        if ($str === null)
+            return null;
+
+        return intval($str);
+    }
+
+    public function getFloat(string $xpath): ?float
+    {
+        $str = $this->getString($xpath);
+
+        if ($str === null)
+            return null;
+
+        return floatval($str);
+    }
+
+    public function getBool(string $xpath): bool
+    {
+        $str = $this->getString($xpath);
+
+        return $str &&
+            ($str !== "0" || strtolower($str) !== "false");
+    }
+
+    public function getDateTime(string $xpath): ?\DateTime
+    {
+        $str = $this->getString($xpath);
+
+        if ($str === null)
+            return null;
+
+        try {
+            return new \DateTime($str);
+        } catch (\Exception $ex) {
+            return null;
+        }
+    }
 }

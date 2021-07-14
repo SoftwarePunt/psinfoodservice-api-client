@@ -27,10 +27,6 @@ class ApiResponseTest extends TestCase
 
         // Collection - item read
         $itemByIndex = $items->getByIndex(0);
-
         $this->assertSame("988887", $itemByIndex->getString("summary/id"));
-        $this->assertSame("PS Citroensnoepje 20g", $itemByIndex->getString("summary/name"));
-        $this->assertSame("PS Citroensnoepje 20g", $itemByIndex->getString("summary/name/value"));
-        $this->assertSame(null, $itemByIndex->getString("summary/name/invalid"));
     }
 }

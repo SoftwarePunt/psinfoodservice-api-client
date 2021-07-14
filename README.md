@@ -27,7 +27,7 @@ This library helps you interact with the PS-API, version 6.
 ## Installation
 ### Requirements
 - PHP 8.0+
-  - with extensions: curl, xml 
+  - with extensions: curl, simplexml 
 - [Composer](https://getcomposer.org/)
 
 ### Setup

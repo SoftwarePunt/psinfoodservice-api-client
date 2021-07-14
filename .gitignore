@@ -3,3 +3,5 @@ vendor/
 
 # PHPUnit output
 *.phpunit.result.cache
+test.php
+tests/samples/search_public_products.real.xml

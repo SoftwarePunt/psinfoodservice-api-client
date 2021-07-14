@@ -4,7 +4,6 @@ namespace SoftwarePunt\PSAPI;
 
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\GuzzleException;
-use Psr\Http\Message\ResponseInterface;
 use SoftwarePunt\PSAPI\Api\ProductApi;
 use SoftwarePunt\PSAPI\Models\PsApiException;
 use SoftwarePunt\PSAPI\Models\Responses\ApiResponse;
@@ -113,11 +112,6 @@ class Client
 
         $requestMethod = empty($postData) ? "GET" : "POST";
         $requestUrl = $this->buildUrl($path, $queryParams);
-
-        /**
-         * @var $response ResponseInterface|null
-         */
-        $response = null;
 
         try {
             $response = $this->httpClient->request($requestMethod, $requestUrl, [

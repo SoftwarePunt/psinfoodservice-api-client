@@ -20,7 +20,7 @@
     },
     "require": {
         "php": ">=8.0",
-        "ext-xml": "*",
+        "ext-simplexml": "*",
         "ext-curl": "*",
         "guzzlehttp/guzzle": "~6.0||~7.0",
         "guzzlehttp/psr7": "^1.2"

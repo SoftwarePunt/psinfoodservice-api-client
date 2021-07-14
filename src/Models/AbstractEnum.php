@@ -2,7 +2,7 @@
 
 namespace SoftwarePunt\PSAPI\Models;
 
-class AbstractEnum
+abstract class AbstractEnum
 {
     private static array $constCacheArray = [];
 

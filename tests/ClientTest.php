@@ -5,6 +5,9 @@ use SoftwarePunt\PSAPI\Client;
 
 class ClientTest extends TestCase
 {
+    // -----------------------------------------------------------------------------------------------------------------
+    // Config
+
     public function testBuildUrl()
     {
         $client = new Client();
@@ -23,5 +26,14 @@ class ClientTest extends TestCase
             actual: $client->buildUrl('/product/search', ['ShowPublicProductSet' => true, 'take' => 2]),
             message: 'buildUrl() should format query parameters properly'
         );
+    }
+
+    // -----------------------------------------------------------------------------------------------------------------
+    // Code path sanity checks
+
+    public function testGetProductApi()
+    {
+        $productApi = (new Client())->product();
+        $this->assertInstanceOf("SoftwarePunt\PSAPI\Api\ProductApi", $productApi);
     }
 }
