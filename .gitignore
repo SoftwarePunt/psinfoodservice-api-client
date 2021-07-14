@@ -3,5 +3,7 @@ vendor/
 
 # PHPUnit output
 *.phpunit.result.cache
+
+# Development / test only
 test.php
 tests/samples/search_public_products.real.xml
