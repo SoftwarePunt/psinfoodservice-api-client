@@ -34,11 +34,15 @@ abstract class AbstractEntity
                     if (class_exists($propTypeName)) {
                         if (is_subclass_of($propTypeName, "SoftwarePunt\PSAPI\Models\AbstractEntity")) {
                             // AbstractEntity sub-type
-                            /**
-                             * @var $itemValue AbstractEntity
-                             */
-                            $itemValue = new $propTypeName();
-                            $itemValue->fillFromItem($collectionItem->getItem($propName));
+                            $subItem = $collectionItem->getItem($propName);
+
+                            if ($subItem) {
+                                /**
+                                 * @var $itemValue AbstractEntity
+                                 */
+                                $itemValue = new $propTypeName();
+                                $itemValue->fillFromItem($subItem);
+                            }
                         }
                     }
                 }

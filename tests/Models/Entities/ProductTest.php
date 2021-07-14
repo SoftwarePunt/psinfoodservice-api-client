@@ -21,7 +21,7 @@ class ProductTest extends TestCase
         $product = new Product();
         $product->fillFromItem($this->__makeTestCollectionItem(), null);
 
-        $this->assertInstanceOf("SoftwarePunt\PSAPI\Models\Entities\ProductSummary", $product->summary);
+        $this->assertInstanceOf("SoftwarePunt\PSAPI\Models\Entities\Productsummary", $product->summary);
         $this->assertSame(988887, $product->summary->id);
     }
 }

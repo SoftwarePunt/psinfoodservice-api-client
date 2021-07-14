@@ -74,3 +74,14 @@ $searchParams->ShowPublicProductSet = true;
 
 $results = $client->product()->search($searchParams);
 ```
+
+## Development
+
+### Generating entity types
+This project contains a tool that can generate or update entities from the XSD file provided by PS. All classes in `src/Models/Entities` are generated using this tool. You can use it as follows:
+
+To use it, manually run the CLI script from the project directory:
+
+```shell
+php cli/xsdgen.php path/to/PS_XSD.xsd
+```
