@@ -11,18 +11,33 @@ class CollectionItem
         $this->xml = $xml;
     }
 
-    public function getString(string $xpath): ?string
+    public function getElement(string $xpath): ?\SimpleXMLElement
     {
-        $result = $this->xml->xpath($xpath)[0] ?? null;
+        return $this->xml->xpath($xpath)[0] ?? null;
+    }
 
-        if ($result === null)
+    public function getItem(string $xpath): ?CollectionItem
+    {
+        $element = $this->getElement($xpath);
+
+        if ($element === null)
             return null;
 
-        $str = (string)$result[0];
+        return new CollectionItem($element);
+    }
+
+    public function getString(string $xpath): ?string
+    {
+        $element = $this->getElement($xpath);
+
+        if ($element === null)
+            return null;
+
+        $str = (string)$element[0];
 
         if (!$str || empty(trim($str))) {
             // String and enum values are typically expressed under a "value" sub element in PS-API responses
-            if (!str_ends_with("/value", $result)) {
+            if (!str_ends_with("/value", $element)) {
                 return $this->getString("{$xpath}/value");
             }
             return null;

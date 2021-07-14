@@ -15,6 +15,29 @@ class CollectionItemTest extends TestCase
         return new CollectionItem($productElement);
     }
 
+    public function testGetElement()
+    {
+        $testItem = $this->__makeTestItem();
+
+        $elementResult = $testItem->getElement("summary");
+
+        $this->assertInstanceOf("\SimpleXmlElement", $elementResult);
+        $this->assertSame("988887", (string)$elementResult->xpath("id")[0]);
+    }
+
+    /**
+     * @depends testGetString
+     */
+    public function testGetItem()
+    {
+        $testItem = $this->__makeTestItem();
+
+        $itemResult = $testItem->getItem("summary");
+
+        $this->assertInstanceOf("SoftwarePunt\PSAPI\Models\Responses\CollectionItem", $itemResult);
+        $this->assertSame("988887", $itemResult->getString("id"));
+    }
+
     public function testGetString()
     {
         $testItem = $this->__makeTestItem();

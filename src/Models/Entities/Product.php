@@ -2,7 +2,9 @@
 
 namespace SoftwarePunt\PSAPI\Models\Entities;
 
-class Product
-{
+use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
+class Product extends AbstractEntity
+{
+    public ProductSummary $summary;
 }
