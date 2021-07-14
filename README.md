@@ -22,7 +22,7 @@ This library helps you interact with the PS-API, version 6.
   </tbody>
 </table>
 
-⚠ **Work in progress - not all API features are implemented yet. PRs are welcome. :)**
+⚠ **Heads up - Limited scope:** this library currently only supports retrieving product information. PRs for other API features are welcome. :)
 
 ## Installation
 ### Requirements
@@ -64,16 +64,23 @@ $client->product()->search();
 ```
 
 ### Searching for products
-You can search for a product by providing parameters. You must select one "product set" at minimum; for example: all public products:
+You can search for a product by providing parameters. You must select one "product set" at minimum; for example: all public products.
+
+You will typically use this to find a specific product, for example:
 
 ```php
 use SoftwarePunt\PSAPI\Models\Params\ProductSearchParams;
 
 $searchParams = new ProductSearchParams();
 $searchParams->ShowPublicProductSet = true;
+$searchParams->FilterOnEan = "1213456789125";
 
-$results = $client->product()->search($searchParams);
+$products = $client->product()->search($searchParams);
+$product = $products->product[0];
+echo $product->summary->name; // PS Citroensnoepje 20g
 ```
+
+☝ The objects returned by this library are based on the API's actual XML response structure. They are fully type-hinted and have docblocks where available. 
 
 ## Development
 
