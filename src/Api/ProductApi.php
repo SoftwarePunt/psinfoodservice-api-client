@@ -2,18 +2,24 @@
 
 namespace SoftwarePunt\PSAPI\Api;
 
+use SoftwarePunt\PSAPI\Models\Entities\Products;
 use SoftwarePunt\PSAPI\Models\Params\ProductSearchParams;
-use SoftwarePunt\PSAPI\Models\Responses\ApiResponse;
 
 class ProductApi extends AbstractApi
 {
-    public function search(?ProductSearchParams $params): ApiResponse
+    public function search(?ProductSearchParams $params): Products
     {
         if (!$params) {
             // Default params
             $params = new ProductSearchParams();
             $params->ShowPublicProductSet = true;
         }
-        return $this->post('/Product/Search', $params->toPostData());
+
+        $response = $this->post('/Product/Search', $params->toPostData())
+            ->getBody();
+
+        $products = new Products();
+        $products->fillFromItem($response);
+        return $products;
     }
 }

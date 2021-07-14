@@ -2,7 +2,7 @@
 
 namespace SoftwarePunt\PSAPI\Models\Responses;
 
-class CollectionItem
+class ResponseElement
 {
     protected \SimpleXMLElement $xml;
 
@@ -16,14 +16,14 @@ class CollectionItem
         return $this->xml->xpath($xpath)[0] ?? null;
     }
 
-    public function getItem(string $xpath): ?CollectionItem
+    public function getItem(string $xpath): ?ResponseElement
     {
         $element = $this->getElement($xpath);
 
         if ($element === null)
             return null;
 
-        return new CollectionItem($element);
+        return new ResponseElement($element);
     }
 
     public function getString(string $xpath): ?string

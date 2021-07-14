@@ -4,16 +4,16 @@ namespace Models\Entities;
 
 use PHPUnit\Framework\TestCase;
 use SoftwarePunt\PSAPI\Models\Entities\Productsummary;
-use SoftwarePunt\PSAPI\Models\Responses\CollectionItem;
+use SoftwarePunt\PSAPI\Models\Responses\ResponseElement;
 
 class ProductSummaryTest extends TestCase
 {
-    private function __makeTestCollectionItem(): CollectionItem
+    private function __makeTestCollectionItem(): ResponseElement
     {
         $sampleRaw = file_get_contents(getcwd() . "/tests/samples/search_public_products.xml");
         $xml = simplexml_load_string($sampleRaw);
         $productElement = $xml->xpath("/envelope/body/products/product")[0];
-        return new CollectionItem($productElement);
+        return new ResponseElement($productElement);
     }
 
     public function testReadFromCollectionItem()

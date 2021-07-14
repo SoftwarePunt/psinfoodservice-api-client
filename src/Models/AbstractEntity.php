@@ -2,11 +2,11 @@
 
 namespace SoftwarePunt\PSAPI\Models;
 
-use SoftwarePunt\PSAPI\Models\Responses\CollectionItem;
+use SoftwarePunt\PSAPI\Models\Responses\ResponseElement;
 
 abstract class AbstractEntity
 {
-    public function fillFromItem(CollectionItem $collectionItem, ?string $prefix = null): void
+    public function fillFromItem(ResponseElement $collectionItem, ?string $prefix = null): void
     {
         $className = get_called_class();
         $rfClass = new \ReflectionClass($className);

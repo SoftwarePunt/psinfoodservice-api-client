@@ -3,7 +3,6 @@
 namespace SoftwarePunt\PSAPI\Models\Responses;
 
 use Psr\Http\Message\ResponseInterface;
-use SoftwarePunt\PSAPI\Models\AbstractParams;
 
 class ApiResponse
 {
@@ -54,14 +53,12 @@ class ApiResponse
         return true;
     }
 
-    protected function readBodyItems(): \Generator
+    public function getBody(): ?ResponseElement
     {
-        $body = $this->xml->xpath('/envelope/body')[0] ?? null;
-
-        if ($body)
-            foreach ($body as $collection)
-                foreach ($collection as $item)
-                    yield new CollectionItem($item);
+        if ($body = $this->xml->xpath('/envelope/body/*')[0] ?? null) {
+            return new ResponseElement($body);
+        }
+        return null;
     }
 
     // -----------------------------------------------------------------------------------------------------------------
@@ -80,13 +77,5 @@ class ApiResponse
     public function getTransactionRef(): string
     {
         return $this->transactionRef;
-    }
-
-    // -----------------------------------------------------------------------------------------------------------------
-    // Collections
-
-    public function asCollection(int $pageSize = AbstractParams::DefaultPageSize): Collection
-    {
-        return new Collection($pageSize, $this->getTotalRowCount(), iterator_to_array($this->readBodyItems()));
     }
 }

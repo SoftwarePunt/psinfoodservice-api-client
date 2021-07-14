@@ -3,16 +3,16 @@
 namespace Models\Responses;
 
 use PHPUnit\Framework\TestCase;
-use SoftwarePunt\PSAPI\Models\Responses\CollectionItem;
+use SoftwarePunt\PSAPI\Models\Responses\ResponseElement;
 
-class CollectionItemTest extends TestCase
+class ResponseElementTest extends TestCase
 {
-    private function __makeTestItem(): CollectionItem
+    private function __makeTestItem(): ResponseElement
     {
         $sampleRaw = file_get_contents(getcwd() . "/tests/samples/search_public_products.xml");
         $xml = simplexml_load_string($sampleRaw);
         $productElement = $xml->xpath("/envelope/body/products/product")[0];
-        return new CollectionItem($productElement);
+        return new ResponseElement($productElement);
     }
 
     public function testGetElement()
@@ -34,7 +34,7 @@ class CollectionItemTest extends TestCase
 
         $itemResult = $testItem->getItem("summary");
 
-        $this->assertInstanceOf("SoftwarePunt\PSAPI\Models\Responses\CollectionItem", $itemResult);
+        $this->assertInstanceOf("SoftwarePunt\PSAPI\Models\Responses\ResponseElement", $itemResult);
         $this->assertSame("988887", $itemResult->getString("id"));
     }
 
