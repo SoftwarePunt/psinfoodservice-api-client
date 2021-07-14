@@ -14,8 +14,8 @@ class Specificationinfo extends AbstractEntity
 	public ?int $productionlocationid = null;
 	public ?string $productionlocationname = null;
 	public ?string $productionlocationgln = null;
-	public ?Date $validfrom = null;
-	public ?Date $validto = null;
+	public ?\DateTime $validfrom = null;
+	public ?\DateTime $validto = null;
 	public ?string $specificationstatusname = null;
 	public ?Ingredientset $ingredientset = null;
 	public ?Allergenset $allergenset = null;

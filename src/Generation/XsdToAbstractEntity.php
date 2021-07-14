@@ -129,7 +129,7 @@ class XsdToAbstractEntity
             $phpTypeText = "int";
         } else if ($type === "float") {
             $phpTypeText = "float";
-        } else if ($type === "dateTime") {
+        } else if ($type === "dateTime" || $type === "date") {
             $phpTypeText = "\DateTime";
         } else {
             $phpTypeText = $this->normalizeTypeName($type);

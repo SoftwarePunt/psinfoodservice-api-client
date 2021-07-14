@@ -22,9 +22,9 @@ class Commercialinfo extends AbstractEntity
 	public ?int $globalproductclassificationid = null;
 	public ?string $globalproductclassificationname = null;
 	public ?string $globalproductclassificationcode = null;
-	public ?Date $validfrom = null;
-	public ?Date $validto = null;
-	public ?Date $endavailabilitydate = null;
+	public ?\DateTime $validfrom = null;
+	public ?\DateTime $validto = null;
+	public ?\DateTime $endavailabilitydate = null;
 	public ?string $description = null;
 	public ?string $commercialstorytitle = null;
 	public ?string $commercialstorytext = null;
