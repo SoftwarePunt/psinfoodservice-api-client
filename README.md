@@ -2,6 +2,7 @@
 ***Unofficial* PHP API Client for PS in foodservice Web API (PS-API)**
 
 [![PHPUnit](https://github.com/SoftwarePunt/psinfoodservice-api-client/actions/workflows/phpunit.yml/badge.svg)](https://github.com/SoftwarePunt/psinfoodservice-api-client/actions/workflows/phpunit.yml)
+[![Version](http://poser.pugx.org/softwarepunt/psinfoodservice-api-client/version)](https://packagist.org/packages/softwarepunt/psinfoodservice-api-client)
 
 This library helps you interact with the PS-API, version 6.
 
