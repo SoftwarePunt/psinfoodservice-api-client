@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\Responses\ResponseElement;
 
 abstract class AbstractEntity
 {
-    public function fillFromItem(ResponseElement $collectionItem, ?string $prefix = null): void
+    public function fillFromItem(ResponseElement $item, ?string $prefix = null): void
     {
         $className = get_called_class();
         $rfClass = new \ReflectionClass($className);
@@ -23,25 +23,50 @@ abstract class AbstractEntity
                 try {
                     // Handle primitive value types
                     $itemValue = match ($propTypeName) {
-                        "string" => $collectionItem->getString($itemKey),
-                        "int" => $collectionItem->getInt($itemKey),
-                        "float" => $collectionItem->getFloat($itemKey),
-                        "bool" => $collectionItem->getBool($itemKey),
-                        "DateTime" => $collectionItem->getDateTime($itemKey)
+                        "string" => $item->getString($itemKey),
+                        "int" => $item->getInt($itemKey),
+                        "float" => $item->getFloat($itemKey),
+                        "bool" => $item->getBool($itemKey),
+                        "DateTime" => $item->getDateTime($itemKey)
                     };
                 } catch (\UnhandledMatchError) {
+                    $isObjectArray = false;
+
+                    // Handle object array with phpdoc type hint
+                    if ($propTypeName === "array") {
+                        if (preg_match('/@var\s+([^\s]+)/', $rfProp->getDocComment(), $matches)) {
+                            list(, $propTypeName) = $matches;
+                            $propTypeName = "SoftwarePunt\PSAPI\Models\Entities\\" . rtrim($propTypeName, '[]');
+                            $isObjectArray = true;
+                        }
+                    }
+
                     // Handle object value types
                     if (class_exists($propTypeName)) {
                         if (is_subclass_of($propTypeName, "SoftwarePunt\PSAPI\Models\AbstractEntity")) {
-                            // AbstractEntity sub-type
-                            $subItem = $collectionItem->getItem($propName);
+                            // AbstractEntity sub-type(s)
+                            if ($isObjectArray) {
+                                $subItems = $item->getItems($propName);
+                                $itemValue = [];
 
-                            if ($subItem) {
-                                /**
-                                 * @var $itemValue AbstractEntity
-                                 */
-                                $itemValue = new $propTypeName();
-                                $itemValue->fillFromItem($subItem);
+                                foreach ($subItems as $subItem) {
+                                    /**
+                                     * @var $itemValue AbstractEntity
+                                     */
+                                    $subItemValue = new $propTypeName();
+                                    $subItemValue->fillFromItem($subItem);
+                                    $itemValue[] = $subItemValue;
+                                }
+                            } else {
+                                $subItem = $item->getItem($propName);
+
+                                if ($subItem) {
+                                    /**
+                                     * @var $itemValue AbstractEntity
+                                     */
+                                    $itemValue = new $propTypeName();
+                                    $itemValue->fillFromItem($subItem);
+                                }
                             }
                         }
                     }

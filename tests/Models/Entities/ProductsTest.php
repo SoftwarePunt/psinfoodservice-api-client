@@ -23,5 +23,7 @@ class ProductsTest extends TestCase
 
         $this->assertInstanceOf("SoftwarePunt\PSAPI\Models\Entities\Products", $products);
         $this->assertIsArray($products->product);
+
+        $this->assertInstanceOf("SoftwarePunt\PSAPI\Models\Entities\Product", $products->product[0]);
     }
 }

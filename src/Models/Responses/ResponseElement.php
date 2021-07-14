@@ -26,6 +26,20 @@ class ResponseElement
         return new ResponseElement($element);
     }
 
+    /**
+     * @param string $xpath
+     * @return array|ResponseElement[]|null
+     */
+    public function getItems(string $xpath): ?array
+    {
+        $elements = $this->xml->xpath($xpath);
+
+        $results = [];
+        foreach ($elements as $element)
+            $results[] = new ResponseElement($element);
+        return $results;
+    }
+
     public function getString(string $xpath): ?string
     {
         $element = $this->getElement($xpath);
