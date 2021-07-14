@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Relationlist extends AbstractEntity
 {
 	/**
-	 * @type Relation[]
+	 * @var Relation[]
 	 */
 	public array $relation;
 }

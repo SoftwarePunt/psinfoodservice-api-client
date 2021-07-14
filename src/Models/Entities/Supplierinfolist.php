@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Supplierinfolist extends AbstractEntity
 {
 	/**
-	 * @type Supplierinfo[]
+	 * @var Supplierinfo[]
 	 */
 	public array $supplierinfo;
 }

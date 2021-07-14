@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Packagingmaterialinfolist extends AbstractEntity
 {
 	/**
-	 * @type Packagingmaterialinfo[]
+	 * @var Packagingmaterialinfo[]
 	 */
 	public array $packagingmaterialinfo;
 }

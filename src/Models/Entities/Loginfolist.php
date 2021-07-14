@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Loginfolist extends AbstractEntity
 {
 	/**
-	 * @type Logitem[]
+	 * @var Logitem[]
 	 */
 	public array $logitem;
 }

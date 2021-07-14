@@ -11,7 +11,10 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Characteristicinfolist extends AbstractEntity
 {
 	/**
-	 * @type Characteristicinfo[]
+	 * List of features (characteristics) of or claim on the product, e.g. Halal, Free from lactose
+	 * Characteristics
+	 * 
+	 * @var Characteristicinfo[]
 	 */
 	public array $characteristicinfo;
 }

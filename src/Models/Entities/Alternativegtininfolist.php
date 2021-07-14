@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Alternativegtininfolist extends AbstractEntity
 {
 	/**
-	 * @type Alternativegtininfo[]
+	 * @var Alternativegtininfo[]
 	 */
 	public array $alternativegtininfo;
 }

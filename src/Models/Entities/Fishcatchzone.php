@@ -11,6 +11,9 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Fishcatchzone extends AbstractEntity
 {
 	public int $id;
+	/**
+	 * Fish catch zone
+	 */
 	public ?string $name = null;
 	public ?string $faocode = null;
 }

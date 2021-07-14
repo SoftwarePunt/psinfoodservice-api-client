@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Summaryinfolist extends AbstractEntity
 {
 	/**
-	 * @type Productsummary[]
+	 * @var Productsummary[]
 	 */
 	public array $summary;
 }

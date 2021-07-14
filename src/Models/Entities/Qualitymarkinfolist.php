@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Qualitymarkinfolist extends AbstractEntity
 {
 	/**
-	 * @type Qualitymarkinfo[]
+	 * @var Qualitymarkinfo[]
 	 */
 	public array $qualitymarkinfo;
 }

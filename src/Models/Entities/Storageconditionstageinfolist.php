@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Storageconditionstageinfolist extends AbstractEntity
 {
 	/**
-	 * @type Storageconditionstageinfo[]
+	 * @var Storageconditionstageinfo[]
 	 */
 	public array $storageconditionstageinfo;
 }

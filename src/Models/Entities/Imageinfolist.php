@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Imageinfolist extends AbstractEntity
 {
 	/**
-	 * @type Imageinfo[]
+	 * @var Imageinfo[]
 	 */
 	public array $imageinfo;
 }

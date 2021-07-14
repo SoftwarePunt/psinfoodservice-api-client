@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Preparationinfoset extends AbstractEntity
 {
 	/**
-	 * @type Preparationinformationinfolist[]
+	 * @var Preparationinformationinfolist[]
 	 */
 	public array $preparationinformationinfolist;
 }

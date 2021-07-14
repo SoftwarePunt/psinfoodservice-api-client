@@ -12,6 +12,10 @@ class Scientificfishname extends AbstractEntity
 {
 	public int $id;
 	public ?string $name = null;
+	/**
+	 * Latin name of the fish
+	 * Scientific name fish
+	 */
 	public ?string $scientificname = null;
 	public ?string $taxonomiccode = null;
 	public ?string $alphacode = null;

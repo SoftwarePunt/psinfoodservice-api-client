@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Productgroupinfolist extends AbstractEntity
 {
 	/**
-	 * @type Productgroupinfo[]
+	 * @var Productgroupinfo[]
 	 */
 	public array $productgroupinfo;
 }

@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Storageconditioninfolist extends AbstractEntity
 {
 	/**
-	 * @type Storageconditioninfo[]
+	 * @var Storageconditioninfo[]
 	 */
 	public array $storageconditioninfo;
 }

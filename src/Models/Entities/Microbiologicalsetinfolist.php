@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Microbiologicalsetinfolist extends AbstractEntity
 {
 	/**
-	 * @type Microbiologicalsetinfo[]
+	 * @var Microbiologicalsetinfo[]
 	 */
 	public array $microbiologicalsetinfo;
 }

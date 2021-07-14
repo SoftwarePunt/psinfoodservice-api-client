@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Products extends AbstractEntity
 {
 	/**
-	 * @type Product[]
+	 * @var Product[]
 	 */
 	public array $product;
 }

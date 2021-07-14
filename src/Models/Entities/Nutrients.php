@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Nutrients extends AbstractEntity
 {
 	/**
-	 * @type Nutrient[]
+	 * @var Nutrient[]
 	 */
 	public array $nutrient;
 }

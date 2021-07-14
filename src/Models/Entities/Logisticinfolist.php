@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Logisticinfolist extends AbstractEntity
 {
 	/**
-	 * @type Logisticinfo[]
+	 * @var Logisticinfo[]
 	 */
 	public array $logisticinfo;
 }

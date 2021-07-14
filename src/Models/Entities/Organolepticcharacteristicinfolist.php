@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Organolepticcharacteristicinfolist extends AbstractEntity
 {
 	/**
-	 * @type Organolepticcharacteristicinfo[]
+	 * @var Organolepticcharacteristicinfo[]
 	 */
 	public array $organolepticcharacteristicinfo;
 }

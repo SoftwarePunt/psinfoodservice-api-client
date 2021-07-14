@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Brands extends AbstractEntity
 {
 	/**
-	 * @type Brand[]
+	 * @var Brand[]
 	 */
 	public array $brand;
 }

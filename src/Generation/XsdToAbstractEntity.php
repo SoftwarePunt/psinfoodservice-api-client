@@ -106,19 +106,28 @@ class XsdToAbstractEntity
 
     private function writeElement(string &$buffer, \SimpleXMLElement $element): bool
     {
+        // -------------------------------------------------------------------------------------------------------------
+        // Init data
+
         $attrs = $element->attributes();
 
         $name = (string)$attrs['name'];
         $type = (string)$attrs['type'];
+        $minOccurs = (int)($attrs['minOccurs'] ?? 0);
+        $maxOccurs = (int)($attrs['maxOccurs'] ?? 1);
 
         if (empty($name) || empty($type)) {
             return false;
         }
 
-        $minOccurs = (int)($attrs['minOccurs'] ?? 0);
-        $maxOccurs = (int)($attrs['maxOccurs'] ?? 1);
+        $phpDocText = null;
+        $phpDocVarType = null;
 
         $isArray = $maxOccurs > 1 || $attrs['maxOccurs'] == "unbounded";
+        $isNullable = $minOccurs === 0;
+
+        // -------------------------------------------------------------------------------------------------------------
+        // Determine php type
 
         if ($type === "string" || str_starts_with($type, "translationtype_")
             || str_starts_with($type, "string_")) {
@@ -136,18 +145,40 @@ class XsdToAbstractEntity
         }
 
         if ($isArray) {
-            $this->writeLine($buffer, "\t/**");
-            $this->writeLine($buffer, "\t * @type {$phpTypeText}[]");
-            $this->writeLine($buffer, "\t */");
-
+            $phpDocVarType = "{$phpTypeText}[]";
             $phpTypeText = "array";
+            $isNullable = false;
         }
-
-        $isNullable = ($minOccurs === 0 && $phpTypeText !== "array");
 
         if ($isNullable) {
             $phpTypeText = "?{$phpTypeText}";
         }
+
+        // -------------------------------------------------------------------------------------------------------------
+        // Read annotations
+
+        foreach ($element->children() as $child) {
+            foreach ($child as $subChild) {
+                if ($subChild->getName() === "documentation") {
+                    $docValue = (string)$subChild;
+                    if (str_ends_with($docValue, ":todo")
+                        || str_ends_with(strtolower($docValue), ":n.a.")) {
+                        // missing doc or not applicable
+                        continue;
+                    }
+                    if ($phpDocText === null) {
+                        $phpDocText = "";
+                    } else {
+                        $phpDocText .= PHP_EOL;
+                    }
+                    $docValueParts = explode(':', $docValue, 2);
+                    $phpDocText .= $docValueParts[1];
+                }
+            }
+        }
+
+        // -------------------------------------------------------------------------------------------------------------
+        // Build declaration
 
         $declaration = "public {$phpTypeText} \${$name}";
 
@@ -155,8 +186,37 @@ class XsdToAbstractEntity
             $declaration .= " = null";
         }
 
+        if ($phpDocText || $phpDocVarType) {
+            $this->writePhpDoc($buffer, $phpDocText, $phpDocVarType, 1);
+        }
+
         $this->writeLine($buffer, "\t{$declaration};");
         return true;
+    }
+
+    private function writePhpDoc(string &$buffer, ?string $text, ?string $varType, int $tabIndex = 1)
+    {
+        $tabs = str_repeat("\t", $tabIndex);
+
+        $this->writeLine($buffer, "{$tabs}/**");
+
+        if ($text) {
+            $textLines = explode(PHP_EOL, $text);
+
+            foreach ($textLines as $textLine) {
+                $this->writeLine($buffer, "{$tabs} * {$textLine}");
+            }
+        }
+
+        if ($varType) {
+            if ($text) {
+                $this->writeLine($buffer, "{$tabs} * ");
+            }
+
+            $this->writeLine($buffer, "{$tabs} * @var {$varType}");
+        }
+
+        $this->writeLine($buffer, "{$tabs} */");
     }
 
     private function writeFooter(string &$buffer): void

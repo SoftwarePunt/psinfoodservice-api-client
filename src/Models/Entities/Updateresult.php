@@ -10,7 +10,13 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
  **/
 class Updateresult extends AbstractEntity
 {
+	/**
+	 *  1
+	 */
 	public bool $issucceeded;
+	/**
+	 *  2
+	 */
 	public int $productid;
 	public ?string $productean = null;
 	public ?string $productthirdpartyid = null;

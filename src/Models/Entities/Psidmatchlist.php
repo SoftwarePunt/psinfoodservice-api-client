@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Psidmatchlist extends AbstractEntity
 {
 	/**
-	 * @type Psidmatch[]
+	 * @var Psidmatch[]
 	 */
 	public array $psidmatch;
 }

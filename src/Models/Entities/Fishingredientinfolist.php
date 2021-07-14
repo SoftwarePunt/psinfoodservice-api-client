@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Fishingredientinfolist extends AbstractEntity
 {
 	/**
-	 * @type Fishingredientinfo[]
+	 * @var Fishingredientinfo[]
 	 */
 	public array $fishingredientinfo;
 }

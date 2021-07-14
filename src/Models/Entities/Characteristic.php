@@ -10,7 +10,13 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
  **/
 class Characteristic extends AbstractEntity
 {
+	/**
+	 * id in master.charcteristic
+	 */
 	public int $id;
+	/**
+	 * name in master.characteristic
+	 */
 	public string $name;
 	public ?string $friendlyname = null;
 	public ?string $description = null;

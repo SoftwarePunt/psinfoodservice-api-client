@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Labelcontactcommunicationchannelinfolist extends AbstractEntity
 {
 	/**
-	 * @type Labelcontactcommunicationchannelinfo[]
+	 * @var Labelcontactcommunicationchannelinfo[]
 	 */
 	public array $labelcontactcommunicationchannelinfo;
 }

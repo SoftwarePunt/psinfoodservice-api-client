@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Assetinfolist extends AbstractEntity
 {
 	/**
-	 * @type Assetinfo[]
+	 * @var Assetinfo[]
 	 */
 	public array $assetinfo;
 }

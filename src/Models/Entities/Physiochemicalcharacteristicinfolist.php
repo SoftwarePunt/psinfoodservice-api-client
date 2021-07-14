@@ -11,7 +11,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 class Physiochemicalcharacteristicinfolist extends AbstractEntity
 {
 	/**
-	 * @type Physiochemicalcharacteristicinfo[]
+	 * @var Physiochemicalcharacteristicinfo[]
 	 */
 	public array $physiochemicalcharacteristicinfo;
 }
