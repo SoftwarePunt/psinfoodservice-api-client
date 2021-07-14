@@ -113,7 +113,7 @@ class XsdToAbstractEntity
 
         $name = (string)$attrs['name'];
         $type = (string)$attrs['type'];
-        $minOccurs = (int)($attrs['minOccurs'] ?? 0);
+        $minOccurs = (int)($attrs['minOccurs'] ?? 1);
         $maxOccurs = (int)($attrs['maxOccurs'] ?? 1);
 
         if (empty($name) || empty($type)) {

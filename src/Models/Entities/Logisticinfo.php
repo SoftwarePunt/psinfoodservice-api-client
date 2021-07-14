@@ -13,7 +13,7 @@ class Logisticinfo extends AbstractEntity
 	/**
 	 * Internal packagedproductid
 	 */
-	public ?int $id = null;
+	public int $id;
 	/**
 	 * Name of product as shown on Foodbook and specifiation
 	 * Logistic/Name

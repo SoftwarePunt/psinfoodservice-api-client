@@ -10,7 +10,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
  **/
 class Specificationinfo extends AbstractEntity
 {
-	public ?int $id = null;
+	public int $id;
 	public ?int $productionlocationid = null;
 	public ?string $productionlocationname = null;
 	public ?string $productionlocationgln = null;

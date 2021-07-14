@@ -10,6 +10,6 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
  **/
 class Productgroupinfo extends AbstractEntity
 {
-	public ?int $id = null;
-	public ?string $name = null;
+	public int $id;
+	public string $name;
 }
