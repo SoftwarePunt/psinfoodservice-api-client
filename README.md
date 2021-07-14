@@ -85,3 +85,6 @@ To use it, manually run the CLI script from the project directory:
 ```shell
 php cli/xsdgen.php path/to/PS_XSD.xsd
 ```
+
+You can download the latest XSD via the documentation page:
+https://webapi.psinfoodservice.com/V6/prod/Documentation/Xsd
