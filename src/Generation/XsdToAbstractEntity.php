@@ -75,7 +75,44 @@ class XsdToAbstractEntity
         $this->writeFooter($buffer);
 
         $targetPath = $targetDirectory . "/{$entityName}.php";
-        return file_put_contents($targetPath, $buffer) > 0;
+
+        if ($this->checkForChanges($buffer, $targetPath)) {
+            // Change detected, write file
+            return file_put_contents($targetPath, $buffer) > 0;
+        } else {
+            // No meaningful change detected
+            return true;
+        }
+    }
+
+    /**
+     * Evaluates whether fundamental changes can be detected between the new buffer and an existing file.
+     *
+     * @param string $newBuffer The new buffer, about to be written to $targetPath.
+     * @param string $targetPath The path to the new, possibly already existing, file.
+     * @return bool TRUE if changes or issues are detected and the file should be (re)written.
+     */
+    private function checkForChanges(string $newBuffer, string $targetPath): bool
+    {
+        if (!file_exists($targetPath))
+            // File does not exist yet
+            return true;
+
+        $oldBuffer = @file_get_contents($targetPath);
+        $oldBuffer = str_replace("\r\n", PHP_EOL, $oldBuffer); // normalize line endings
+
+        if (!$oldBuffer)
+            // Existing file does not appear valid
+            return true;
+
+        $newBufferStartIdx = strpos($newBuffer, 'class ');
+        $oldBufferStartIdx = strpos($oldBuffer, 'class ');
+
+        if ($newBufferStartIdx === false || $oldBufferStartIdx === false)
+            // One or both buffers do not have a valid class declaration?
+            return true;
+
+        return strcmp(substr($newBuffer, $newBufferStartIdx), substr($oldBuffer, $oldBufferStartIdx));
     }
 
     // -----------------------------------------------------------------------------------------------------------------
