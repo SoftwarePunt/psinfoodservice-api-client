@@ -23,6 +23,6 @@
         "ext-simplexml": "*",
         "ext-curl": "*",
         "guzzlehttp/guzzle": "~6.0||~7.0",
-        "guzzlehttp/psr7": "^1.2"
+        "guzzlehttp/psr7": "^1.2||~2.0"
     }
 }
