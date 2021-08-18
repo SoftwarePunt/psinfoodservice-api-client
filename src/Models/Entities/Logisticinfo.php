@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Logisticinfo PS-API type 
- * @generated 2021-07-14
+ * @generated 2021-08-18
  **/
 class Logisticinfo extends AbstractEntity
 {
@@ -25,7 +25,7 @@ class Logisticinfo extends AbstractEntity
 	 */
 	public ?string $gdsntradeitemdescription = null;
 	/**
-	 * A short description of the product. Minimize abbreviations so that the description remains readable. 
+	 * A short description of the product. Minimize abbreviations so that the description remains readable.
 	 * Logistic/Short productname
 	 */
 	public ?string $descriptionshort = null;

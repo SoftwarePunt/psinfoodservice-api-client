@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Nutrientset PS-API type 
- * @generated 2021-07-14
+ * @generated 2021-08-18
  **/
 class Nutrientset extends AbstractEntity
 {
@@ -26,7 +26,7 @@ class Nutrientset extends AbstractEntity
 	 */
 	public ?string $informationprovidername = null;
 	/**
-	 * Alternative text reference intake. Only fill in if reference text is different from "reference intake of an average adult (8400kJ/2000kcal)." 
+	 * Alternative text reference intake. Only fill in if reference text is different from "reference intake of an average adult (8400kJ/2000kcal)."
 	 * Alternative text reference intake (when different from default)
 	 */
 	public ?string $dailyvalueintakereferencecomment = null;

@@ -93,13 +93,11 @@ class Productinfo extends AbstractEntity
 	 */
 	public ?Characteristicinfolist $characteristicinfolist = null;
 	/**
-	 * 
-	 *             The IDDSI framework consists of a continuum of 8 levels (0 - 7), where drinks are measured from Levels 0 – 4, while foods are measured from Levels 3 – 7. The IDDSI Framework provides a common terminology to describe food textures and drink thickness.
+	 * The IDDSI framework consists of a continuum of 8 levels (0 - 7), where drinks are measured from Levels 0 – 4, while foods are measured from Levels 3 – 7. The IDDSI Framework provides a common terminology to describe food textures and drink thickness.
 	 */
 	public ?int $iddsiid = null;
 	/**
-	 * 
-	 *             The IDDSI framework consists of a continuum of 8 levels (0 - 7), where drinks are measured from Levels 0 – 4, while foods are measured from Levels 3 – 7. The IDDSI Framework provides a common terminology to describe food textures and drink thickness.
+	 * The IDDSI framework consists of a continuum of 8 levels (0 - 7), where drinks are measured from Levels 0 – 4, while foods are measured from Levels 3 – 7. The IDDSI Framework provides a common terminology to describe food textures and drink thickness.
 	 */
 	public ?string $iddsiname = null;
 }

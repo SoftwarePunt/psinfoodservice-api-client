@@ -209,7 +209,7 @@ class XsdToAbstractEntity
                         $phpDocText .= PHP_EOL;
                     }
                     $docValueParts = explode(':', $docValue, 2);
-                    $phpDocText .= $docValueParts[1];
+                    $phpDocText .= trim($docValueParts[1]);
                 }
             }
         }

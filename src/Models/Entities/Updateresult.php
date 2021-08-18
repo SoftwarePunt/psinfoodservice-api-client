@@ -6,16 +6,16 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Updateresult PS-API type 
- * @generated 2021-07-14
+ * @generated 2021-08-18
  **/
 class Updateresult extends AbstractEntity
 {
 	/**
-	 *  1
+	 * 1
 	 */
 	public bool $issucceeded;
 	/**
-	 *  2
+	 * 2
 	 */
 	public int $productid;
 	public ?string $productean = null;
