@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\Responses\ResponseElement;
 
 abstract class AbstractEntity
 {
-    public function fillFromItem(ResponseElement $item, ?string $prefix = null): void
+    public function fillFromItem(?ResponseElement $item, ?string $prefix = null): void
     {
         $className = get_called_class();
         $rfClass = new \ReflectionClass($className);
@@ -19,7 +19,7 @@ abstract class AbstractEntity
             $itemKey = ($prefix ?? "") . strtolower($propName);
             $itemValue = null;
 
-            if ($propType && $propTypeName) {
+            if ($item && $propType && $propTypeName) {
                 try {
                     // Handle primitive value types
                     $itemValue = match ($propTypeName) {
@@ -77,6 +77,8 @@ abstract class AbstractEntity
                 $this->$propName = $itemValue;
             } else if ($propType->allowsNull()) {
                 $this->$propName = null;
+            } else if ($propTypeName === "array") {
+                $this->$propName = [];
             }
         }
     }
