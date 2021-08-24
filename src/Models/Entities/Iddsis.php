@@ -5,13 +5,13 @@ namespace SoftwarePunt\PSAPI\Models\Entities;
 use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
- * Nutrients PS-API type 
+ * Iddsis PS-API type 
  * @generated 2021-08-24
  **/
-class Nutrients extends AbstractEntity
+class Iddsis extends AbstractEntity
 {
 	/**
-	 * @var Nutrient[]
+	 * @var Iddsi[]
 	 */
-	public array $nutrient;
+	public array $iddsi;
 }

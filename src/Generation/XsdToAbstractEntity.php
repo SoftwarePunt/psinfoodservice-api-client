@@ -8,6 +8,7 @@ namespace SoftwarePunt\PSAPI\Generation;
 class XsdToAbstractEntity
 {
     private \SimpleXMLElement $xsd;
+    private string $targetDirectory;
 
     public function __construct(string $xsdPath)
     {
@@ -38,16 +39,18 @@ class XsdToAbstractEntity
 
     public function processAll(string $targetDirectory): void
     {
+        $this->targetDirectory = $targetDirectory;
+
         foreach ($this->xsd->children() as $entry) {
             if ($entry->getName() === "complexType") {
-                $this->processOne($targetDirectory, $entry);
+                $this->processOne($entry);
             }
         }
     }
 
-    public function processOne(string $targetDirectory, \SimpleXMLElement $xsd): bool
+    private function processOne(\SimpleXMLElement $xsdElement, string $overrideName = null): bool
     {
-        $entityName = (string)$xsd->attributes()['name'];
+        $entityName = $overrideName ? $overrideName : (string)$xsdElement->attributes()['name'];
 
         if (empty($entityName) || in_array($entityName, self::$typeBlackList)) {
             return false;
@@ -60,7 +63,7 @@ class XsdToAbstractEntity
 
         $anyEntries = false;
 
-        foreach ($xsd->children() as $child) {
+        foreach ($xsdElement->children() as $child) {
             foreach ($child as $element) {
                 if ($this->writeElement($buffer, $element)) {
                     $anyEntries = true;
@@ -74,7 +77,7 @@ class XsdToAbstractEntity
 
         $this->writeFooter($buffer);
 
-        $targetPath = $targetDirectory . "/{$entityName}.php";
+        $targetPath = $this->targetDirectory . "/{$entityName}.php";
 
         if ($this->checkForChanges($buffer, $targetPath)) {
             // Change detected, write file
@@ -153,18 +156,34 @@ class XsdToAbstractEntity
         $minOccurs = (int)($attrs['minOccurs'] ?? 1);
         $maxOccurs = (int)($attrs['maxOccurs'] ?? 1);
 
-        if (empty($name) || empty($type)) {
-            return false;
-        }
-
-        $phpDocText = null;
-        $phpDocVarType = null;
-
         $isArray = $maxOccurs > 1 || $attrs['maxOccurs'] == "unbounded";
         $isNullable = $minOccurs === 0;
 
         // -------------------------------------------------------------------------------------------------------------
+        // Nested complex types
+
+        // Some nodes, like <allergens> are empty arrays containing an array of a sub element like <allergeninfo>
+        // These are basically anonymous and useless entities that we'll need create ourselves
+
+        foreach ($element->children() as $child) {
+            if ($child->getName() === "complexType") {
+                $this->processOne($child, $name);
+                $type = $name;
+            }
+        }
+
+        // -------------------------------------------------------------------------------------------------------------
+        // Process check
+
+        if (empty($name) || empty($type)) {
+            return false;
+        }
+
+        // -------------------------------------------------------------------------------------------------------------
         // Determine php type
+
+        $phpDocText = null;
+        $phpDocVarType = null;
 
         if ($type === "string" || str_starts_with($type, "translationtype_")
             || str_starts_with($type, "string_")) {

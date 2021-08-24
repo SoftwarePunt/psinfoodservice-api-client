@@ -5,13 +5,13 @@ namespace SoftwarePunt\PSAPI\Models\Entities;
 use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
- * Nutrients PS-API type 
+ * Assetfacingtypes PS-API type 
  * @generated 2021-08-24
  **/
-class Nutrients extends AbstractEntity
+class Assetfacingtypes extends AbstractEntity
 {
 	/**
-	 * @var Nutrient[]
+	 * @var Assetfacingtype[]
 	 */
-	public array $nutrient;
+	public array $assetfacingtype;
 }

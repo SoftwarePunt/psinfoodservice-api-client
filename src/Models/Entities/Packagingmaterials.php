@@ -5,13 +5,13 @@ namespace SoftwarePunt\PSAPI\Models\Entities;
 use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
- * Nutrients PS-API type 
+ * Packagingmaterials PS-API type 
  * @generated 2021-08-24
  **/
-class Nutrients extends AbstractEntity
+class Packagingmaterials extends AbstractEntity
 {
 	/**
-	 * @var Nutrient[]
+	 * @var Packagingmaterial[]
 	 */
-	public array $nutrient;
+	public array $packagingmaterial;
 }

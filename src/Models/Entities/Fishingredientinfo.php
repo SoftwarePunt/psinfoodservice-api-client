@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Fishingredientinfo PS-API type 
- * @generated 2021-07-14
+ * @generated 2021-08-24
  **/
 class Fishingredientinfo extends AbstractEntity
 {
@@ -19,4 +19,5 @@ class Fishingredientinfo extends AbstractEntity
 	public int $capturemethodid;
 	public ?string $capturemethodfaocode = null;
 	public ?string $capturemethodname = null;
+	public ?Catchzoneinfolist $catchzoneinfolist = null;
 }

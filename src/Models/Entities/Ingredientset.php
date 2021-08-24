@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Ingredientset PS-API type 
- * @generated 2021-07-14
+ * @generated 2021-08-24
  **/
 class Ingredientset extends AbstractEntity
 {
@@ -16,4 +16,5 @@ class Ingredientset extends AbstractEntity
 	public ?string $ingredientdeclaration = null;
 	public ?string $ingredientdeclarationpreview = null;
 	public ?string $gs1ingredientallergensummary = null;
+	public ?Ingredients $ingredients = null;
 }

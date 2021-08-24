@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Productgroup PS-API type 
- * @generated 2021-07-14
+ * @generated 2021-08-24
  **/
 class Productgroup extends AbstractEntity
 {
@@ -15,4 +15,5 @@ class Productgroup extends AbstractEntity
 	public ?string $description = null;
 	public ?int $sequence = null;
 	public ?string $logo = null;
+	public ?Productgroupchildren $productgroupchildren = null;
 }
