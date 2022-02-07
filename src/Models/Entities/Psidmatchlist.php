@@ -6,10 +6,11 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Psidmatchlist PS-API type 
- * @generated 2021-07-14
+ * @generated 2022-02-07
  **/
 class Psidmatchlist extends AbstractEntity
 {
+	public ?Psidsettings $psidsettings = null;
 	/**
 	 * @var Psidmatch[]
 	 */

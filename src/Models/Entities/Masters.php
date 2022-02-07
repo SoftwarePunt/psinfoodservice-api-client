@@ -6,12 +6,13 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Masters PS-API type 
- * @generated 2021-08-24
+ * @generated 2022-02-07
  **/
 class Masters extends AbstractEntity
 {
 	public ?Allergens $allergens = null;
 	public ?Countries $countries = null;
+	public ?Declarationformattypes $declarationformattypes = null;
 	public ?Levelofcontainments $levelofcontainments = null;
 	public ?Measurementprecisions $measurementprecisions = null;
 	public ?Microbiologicalorganisms $microbiologicalorganisms = null;
@@ -53,4 +54,5 @@ class Masters extends AbstractEntity
 	public ?Characteristics $characteristics = null;
 	public ?Alternativegtins $alternativegtins = null;
 	public ?Iddsis $iddsis = null;
+	public ?Characteristicvalidations $characteristicvalidations = null;
 }

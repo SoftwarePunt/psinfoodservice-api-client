@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Assetinfo PS-API type 
- * @generated 2021-07-14
+ * @generated 2022-02-07
  **/
 class Assetinfo extends AbstractEntity
 {
@@ -23,6 +23,10 @@ class Assetinfo extends AbstractEntity
 	public ?string $angletypename = null;
 	public ?string $title = null;
 	public ?string $downloadurl = null;
+	/**
+	 * Show the extension type of the downloadable file
+	 */
+	public ?string $downloadextension = null;
 	public ?string $hyperlink = null;
 	public ?string $externalreferenceid = null;
 	public ?\DateTime $expirationdate = null;
