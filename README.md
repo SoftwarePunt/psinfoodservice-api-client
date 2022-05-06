@@ -73,7 +73,8 @@ You will typically use this to find a specific product, for example:
 use SoftwarePunt\PSAPI\Models\Params\ProductSearchParams;
 
 $searchParams = new ProductSearchParams();
-$searchParams->ShowPublicProductSet = true;
+$searchParams->ShowAllProductSet = true;
+$searchParams->ShowSubscribedProductSet = true; // must be set to explicitly include private data
 $searchParams->FilterOnEan = "1213456789125";
 
 $products = $client->product()->search($searchParams);
