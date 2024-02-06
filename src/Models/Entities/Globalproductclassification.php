@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Globalproductclassification PS-API type 
- * @generated 2021-07-14
+ * @generated 2024-02-06
  **/
 class Globalproductclassification extends AbstractEntity
 {
@@ -21,4 +21,5 @@ class Globalproductclassification extends AbstractEntity
 	public ?string $brickcode = null;
 	public ?string $brickdescription = null;
 	public bool $isnonfood;
+	public ?bool $isactive = null;
 }

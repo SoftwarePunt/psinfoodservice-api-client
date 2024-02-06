@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Allergens PS-API type 
- * @generated 2022-02-07
+ * @generated 2024-02-06
  **/
 class Allergens extends AbstractEntity
 {

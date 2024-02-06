@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Package PS-API type 
- * @generated 2021-07-14
+ * @generated 2024-02-06
  **/
 class Package extends AbstractEntity
 {
@@ -32,6 +32,7 @@ class Package extends AbstractEntity
 	public ?bool $depositapplies = null;
 	public ?float $depositamount = null;
 	public ?bool $isprimarypackage = null;
+	public ?int $singleuseplasticcount = null;
 	public ?bool $ispackagerecyclable = null;
 	public ?float $percentagerecycledmaterialused = null;
 	public ?string $locationtraceabilitycode = null;

@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Specificationinfo PS-API type 
- * @generated 2022-02-07
+ * @generated 2024-02-06
  **/
 class Specificationinfo extends AbstractEntity
 {
@@ -30,4 +30,5 @@ class Specificationinfo extends AbstractEntity
 	public ?float $percentagenuts = null;
 	public ?float $percentagemeat = null;
 	public ?float $percentagefish = null;
+	public ?float $percentageoils = null;
 }

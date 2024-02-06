@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Nutrient PS-API type 
- * @generated 2021-07-14
+ * @generated 2024-02-06
  **/
 class Nutrient extends AbstractEntity
 {
@@ -16,6 +16,8 @@ class Nutrient extends AbstractEntity
 	public ?string $measurementprecisionname = null;
 	public ?float $value = null;
 	public ?float $valueperserving = null;
+	public ?Decimal $decimalvalue = null;
+	public ?Decimal $decimalvalueperserving = null;
 	public ?float $guidelinedailyamount = null;
 	public ?int $unitofmeasureid = null;
 	public ?string $unitofmeasurename = null;

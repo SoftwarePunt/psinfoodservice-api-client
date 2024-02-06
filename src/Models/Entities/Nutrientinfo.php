@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Nutrientinfo PS-API type 
- * @generated 2021-07-14
+ * @generated 2024-02-06
  **/
 class Nutrientinfo extends AbstractEntity
 {
@@ -18,5 +18,9 @@ class Nutrientinfo extends AbstractEntity
 	public ?float $servingunitvalue = null;
 	public ?int $servinguomid = null;
 	public ?string $servinguomname = null;
+	/**
+	 * When set to true, this will attempt to automatically calculate the nutrients per potion values based on the per 100 and the portion size. Autmoatic calculation will only be done on nutrients that have no servingunitvalue
+	 */
+	public ?bool $autocalculatenutrientperportion = null;
 	public ?Nutrients $nutrients = null;
 }

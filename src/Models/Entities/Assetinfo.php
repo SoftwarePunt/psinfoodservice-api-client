@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Assetinfo PS-API type 
- * @generated 2022-02-07
+ * @generated 2024-02-06
  **/
 class Assetinfo extends AbstractEntity
 {
@@ -35,4 +35,8 @@ class Assetinfo extends AbstractEntity
 	public ?bool $isdefault = null;
 	public ?string $availableincultures = null;
 	public ?bool $isheroimage = null;
+	public ?int $maxpixelheight = null;
+	public ?int $maxpixelwidth = null;
+	public ?Assetimageinfo $highresolutionimage = null;
+	public ?Assetimageinfo $lowresolutionimage = null;
 }

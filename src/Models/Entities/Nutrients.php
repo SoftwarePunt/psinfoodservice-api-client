@@ -6,7 +6,7 @@ use SoftwarePunt\PSAPI\Models\AbstractEntity;
 
 /**
  * Nutrients PS-API type 
- * @generated 2022-02-07
+ * @generated 2024-02-06
  **/
 class Nutrients extends AbstractEntity
 {
